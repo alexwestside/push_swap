@@ -82,18 +82,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap/libft.h">
-			<Option target="push_swap_c"/>
-		</Unit>
-		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap/main.c">
-			<Option target="push_swap_c"/>
-		</Unit>
-		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap/push_swap.h">
-			<Option target="push_swap_c"/>
-		</Unit>
-		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap/usage.c">
-			<Option target="push_swap_c"/>
-		</Unit>
 		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

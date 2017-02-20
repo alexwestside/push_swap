@@ -15,6 +15,9 @@
 
 #include "ft_printf/ft_printf.h"
 
+#define MIN_INT -2147483648
+#define MAX_INT 2147483647
+
 typedef struct 	s_flags
 {
 	int status_oper_mode 	: 1;	// -v
@@ -30,13 +33,16 @@ typedef struct 	s_flags
 typedef struct 		s_stack
 {
 	int 			val;
-	struct s_stack	*start;
-	struct s_stack	*end;
+	//struct s_stack	*start;
+	//struct s_stack	*end;
 	struct s_stack 	*next;
 	struct s_stack	*prev;
 }					t_stack;
 
-
+void ft_error(void);
 void ft_usage(char *av);
+void ft_check_and_fill(char **av, t_stack *a);
+void ft_val_check(char **av);
+
 
 #endif //PUSH_SWAP_C_PUSH_SWAP_H

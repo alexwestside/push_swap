@@ -4,6 +4,7 @@
 void ft_error(void)
 {
 	ft_putendl("Error");
+	exit(EXIT_FAILURE);
 }
 
 void ft_usage(char *av)
