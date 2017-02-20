@@ -27,9 +27,8 @@ int main(int ac, char **av)
 
 	ac < 2 ? ft_usage(*av) : av++;
 	ft_parse_stack(av, &st_flag);
+sjhfkdsgkdsgskd
 
-
-	dgdfgdfggsdghdzngdbgxf,gn,.xb;blg
 }
 
 
