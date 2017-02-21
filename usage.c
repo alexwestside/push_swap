@@ -20,6 +20,3 @@ void ft_usage(char *av)
 	ft_putendl("\t -s for [disable all mode]");
 	exit(EXIT_FAILURE);
 }
-
-
-

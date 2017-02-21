@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nfs/2016/o/orizhiy/ClionProjects/push_swap
+CMAKE_SOURCE_DIR = /nfs/2016/o/orizhiy/ClionProjects/push_swap.c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug
+CMAKE_BINARY_DIR = /nfs/2016/o/orizhiy/ClionProjects/push_swap.c/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/CMakeFiles /nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/2016/o/orizhiy/ClionProjects/push_swap.c/cmake-build-debug/CMakeFiles /nfs/2016/o/orizhiy/ClionProjects/push_swap.c/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/2016/o/orizhiy/ClionProjects/push_swap.c/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,60 @@ push_swap_c/fast:
 	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/build
 .PHONY : push_swap_c/fast
 
+main.o: main.c.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/main.c.o
+.PHONY : main.c.o
+
+main.i: main.c.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/main.c.i
+.PHONY : main.c.i
+
+main.s: main.c.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/main.c.s
+.PHONY : main.c.s
+
+usage.o: usage.c.o
+
+.PHONY : usage.o
+
+# target to build an object file
+usage.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/usage.c.o
+.PHONY : usage.c.o
+
+usage.i: usage.c.i
+
+.PHONY : usage.i
+
+# target to preprocess a source file
+usage.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/usage.c.i
+.PHONY : usage.c.i
+
+usage.s: usage.c.s
+
+.PHONY : usage.s
+
+# target to generate assembly for a file
+usage.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/usage.c.s
+.PHONY : usage.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -132,6 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... push_swap_c"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... usage.o"
+	@echo "... usage.i"
+	@echo "... usage.s"
 .PHONY : help
 
 

@@ -1,5 +1,0 @@
-
-#ifndef PUSH_SWAP_C_LIBFT_H
-#define PUSH_SWAP_C_LIBFT_H
-
-#endif //PUSH_SWAP_C_LIBFT_H

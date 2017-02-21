@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nfs/2016/o/orizhiy/ClionProjects/push_swap
+CMAKE_SOURCE_DIR = /nfs/2016/o/orizhiy/ClionProjects/push_swap.c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug
+CMAKE_BINARY_DIR = /nfs/2016/o/orizhiy/ClionProjects/push_swap.c/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/push_swap_c.dir/depend.make
@@ -57,7 +57,77 @@ include CMakeFiles/push_swap_c.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/push_swap_c.dir/flags.make
 
-CMakeFiles/push_swap_c.dir/requires:
+CMakeFiles/push_swap_c.dir/main.c.o: CMakeFiles/push_swap_c.dir/flags.make
+CMakeFiles/push_swap_c.dir/main.c.o: ../main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/o/orizhiy/ClionProjects/push_swap.c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/push_swap_c.dir/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap_c.dir/main.c.o   -c /nfs/2016/o/orizhiy/ClionProjects/push_swap.c/main.c
+
+CMakeFiles/push_swap_c.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap_c.dir/main.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/o/orizhiy/ClionProjects/push_swap.c/main.c > CMakeFiles/push_swap_c.dir/main.c.i
+
+CMakeFiles/push_swap_c.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap_c.dir/main.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/o/orizhiy/ClionProjects/push_swap.c/main.c -o CMakeFiles/push_swap_c.dir/main.c.s
+
+CMakeFiles/push_swap_c.dir/main.c.o.requires:
+
+.PHONY : CMakeFiles/push_swap_c.dir/main.c.o.requires
+
+CMakeFiles/push_swap_c.dir/main.c.o.provides: CMakeFiles/push_swap_c.dir/main.c.o.requires
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/main.c.o.provides.build
+.PHONY : CMakeFiles/push_swap_c.dir/main.c.o.provides
+
+CMakeFiles/push_swap_c.dir/main.c.o.provides.build: CMakeFiles/push_swap_c.dir/main.c.o
+
+
+CMakeFiles/push_swap_c.dir/usage.c.o: CMakeFiles/push_swap_c.dir/flags.make
+CMakeFiles/push_swap_c.dir/usage.c.o: ../usage.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/o/orizhiy/ClionProjects/push_swap.c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/push_swap_c.dir/usage.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap_c.dir/usage.c.o   -c /nfs/2016/o/orizhiy/ClionProjects/push_swap.c/usage.c
+
+CMakeFiles/push_swap_c.dir/usage.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap_c.dir/usage.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/o/orizhiy/ClionProjects/push_swap.c/usage.c > CMakeFiles/push_swap_c.dir/usage.c.i
+
+CMakeFiles/push_swap_c.dir/usage.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap_c.dir/usage.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/o/orizhiy/ClionProjects/push_swap.c/usage.c -o CMakeFiles/push_swap_c.dir/usage.c.s
+
+CMakeFiles/push_swap_c.dir/usage.c.o.requires:
+
+.PHONY : CMakeFiles/push_swap_c.dir/usage.c.o.requires
+
+CMakeFiles/push_swap_c.dir/usage.c.o.provides: CMakeFiles/push_swap_c.dir/usage.c.o.requires
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/usage.c.o.provides.build
+.PHONY : CMakeFiles/push_swap_c.dir/usage.c.o.provides
+
+CMakeFiles/push_swap_c.dir/usage.c.o.provides.build: CMakeFiles/push_swap_c.dir/usage.c.o
+
+
+# Object files for target push_swap_c
+push_swap_c_OBJECTS = \
+"CMakeFiles/push_swap_c.dir/main.c.o" \
+"CMakeFiles/push_swap_c.dir/usage.c.o"
+
+# External object files for target push_swap_c
+push_swap_c_EXTERNAL_OBJECTS =
+
+push_swap_c: CMakeFiles/push_swap_c.dir/main.c.o
+push_swap_c: CMakeFiles/push_swap_c.dir/usage.c.o
+push_swap_c: CMakeFiles/push_swap_c.dir/build.make
+push_swap_c: ../ft_printf/libftprintf.a
+push_swap_c: CMakeFiles/push_swap_c.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/o/orizhiy/ClionProjects/push_swap.c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable push_swap_c"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/push_swap_c.dir/link.txt --verbose=$(VERBOSE)
+
+# Rule to build all files generated by this target.
+CMakeFiles/push_swap_c.dir/build: push_swap_c
+
+.PHONY : CMakeFiles/push_swap_c.dir/build
+
+CMakeFiles/push_swap_c.dir/requires: CMakeFiles/push_swap_c.dir/main.c.o.requires
+CMakeFiles/push_swap_c.dir/requires: CMakeFiles/push_swap_c.dir/usage.c.o.requires
 
 .PHONY : CMakeFiles/push_swap_c.dir/requires
 
@@ -66,6 +136,6 @@ CMakeFiles/push_swap_c.dir/clean:
 .PHONY : CMakeFiles/push_swap_c.dir/clean
 
 CMakeFiles/push_swap_c.dir/depend:
-	cd /nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /nfs/2016/o/orizhiy/ClionProjects/push_swap /nfs/2016/o/orizhiy/ClionProjects/push_swap /nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug /nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug /nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /nfs/2016/o/orizhiy/ClionProjects/push_swap.c/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /nfs/2016/o/orizhiy/ClionProjects/push_swap.c /nfs/2016/o/orizhiy/ClionProjects/push_swap.c /nfs/2016/o/orizhiy/ClionProjects/push_swap.c/cmake-build-debug /nfs/2016/o/orizhiy/ClionProjects/push_swap.c/cmake-build-debug /nfs/2016/o/orizhiy/ClionProjects/push_swap.c/cmake-build-debug/CMakeFiles/push_swap_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/push_swap_c.dir/depend
 
