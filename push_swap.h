@@ -35,6 +35,7 @@ void ft_error(void);
 void ft_usage(char *av);
 void ft_check_and_fill(char **av, t_stack *a);
 void ft_val_check(char **av);
+long long int ft_atoi_push_swap(char *s);
 
 
 #endif //PUSH_SWAP_C_PUSH_SWAP_H
