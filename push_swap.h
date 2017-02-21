@@ -13,7 +13,7 @@
 #ifndef PUSH_SWAP_C_PUSH_SWAP_H
 #define PUSH_SWAP_C_PUSH_SWAP_H
 
-#include "ft_printf/ft_printf.h"
+#include "ft_printf.h"
 
 #define MIN_INT -2147483648
 #define MAX_INT 2147483647
