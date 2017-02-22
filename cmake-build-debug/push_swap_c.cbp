@@ -85,7 +85,22 @@
 		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap.c/main.c">
 			<Option target="push_swap_c"/>
 		</Unit>
+		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap.c/push.c">
+			<Option target="push_swap_c"/>
+		</Unit>
 		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap.c/push_swap.h">
+			<Option target="push_swap_c"/>
+		</Unit>
+		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap.c/rev_rotate.c">
+			<Option target="push_swap_c"/>
+		</Unit>
+		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap.c/rorate.c">
+			<Option target="push_swap_c"/>
+		</Unit>
+		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap.c/sort_solution.c">
+			<Option target="push_swap_c"/>
+		</Unit>
+		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap.c/swap.c">
 			<Option target="push_swap_c"/>
 		</Unit>
 		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap.c/usage.c">

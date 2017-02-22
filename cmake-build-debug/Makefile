@@ -150,6 +150,141 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/main.c.s
 .PHONY : main.c.s
 
+push.o: push.c.o
+
+.PHONY : push.o
+
+# target to build an object file
+push.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/push.c.o
+.PHONY : push.c.o
+
+push.i: push.c.i
+
+.PHONY : push.i
+
+# target to preprocess a source file
+push.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/push.c.i
+.PHONY : push.c.i
+
+push.s: push.c.s
+
+.PHONY : push.s
+
+# target to generate assembly for a file
+push.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/push.c.s
+.PHONY : push.c.s
+
+rev_rotate.o: rev_rotate.c.o
+
+.PHONY : rev_rotate.o
+
+# target to build an object file
+rev_rotate.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/rev_rotate.c.o
+.PHONY : rev_rotate.c.o
+
+rev_rotate.i: rev_rotate.c.i
+
+.PHONY : rev_rotate.i
+
+# target to preprocess a source file
+rev_rotate.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/rev_rotate.c.i
+.PHONY : rev_rotate.c.i
+
+rev_rotate.s: rev_rotate.c.s
+
+.PHONY : rev_rotate.s
+
+# target to generate assembly for a file
+rev_rotate.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/rev_rotate.c.s
+.PHONY : rev_rotate.c.s
+
+rorate.o: rorate.c.o
+
+.PHONY : rorate.o
+
+# target to build an object file
+rorate.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/rorate.c.o
+.PHONY : rorate.c.o
+
+rorate.i: rorate.c.i
+
+.PHONY : rorate.i
+
+# target to preprocess a source file
+rorate.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/rorate.c.i
+.PHONY : rorate.c.i
+
+rorate.s: rorate.c.s
+
+.PHONY : rorate.s
+
+# target to generate assembly for a file
+rorate.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/rorate.c.s
+.PHONY : rorate.c.s
+
+sort_solution.o: sort_solution.c.o
+
+.PHONY : sort_solution.o
+
+# target to build an object file
+sort_solution.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/sort_solution.c.o
+.PHONY : sort_solution.c.o
+
+sort_solution.i: sort_solution.c.i
+
+.PHONY : sort_solution.i
+
+# target to preprocess a source file
+sort_solution.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/sort_solution.c.i
+.PHONY : sort_solution.c.i
+
+sort_solution.s: sort_solution.c.s
+
+.PHONY : sort_solution.s
+
+# target to generate assembly for a file
+sort_solution.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/sort_solution.c.s
+.PHONY : sort_solution.c.s
+
+swap.o: swap.c.o
+
+.PHONY : swap.o
+
+# target to build an object file
+swap.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/swap.c.o
+.PHONY : swap.c.o
+
+swap.i: swap.c.i
+
+.PHONY : swap.i
+
+# target to preprocess a source file
+swap.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/swap.c.i
+.PHONY : swap.c.i
+
+swap.s: swap.c.s
+
+.PHONY : swap.s
+
+# target to generate assembly for a file
+swap.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_c.dir/build.make CMakeFiles/push_swap_c.dir/swap.c.s
+.PHONY : swap.c.s
+
 usage.o: usage.c.o
 
 .PHONY : usage.o
@@ -189,6 +324,21 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... push.o"
+	@echo "... push.i"
+	@echo "... push.s"
+	@echo "... rev_rotate.o"
+	@echo "... rev_rotate.i"
+	@echo "... rev_rotate.s"
+	@echo "... rorate.o"
+	@echo "... rorate.i"
+	@echo "... rorate.s"
+	@echo "... sort_solution.o"
+	@echo "... sort_solution.i"
+	@echo "... sort_solution.s"
+	@echo "... swap.o"
+	@echo "... swap.i"
+	@echo "... swap.s"
 	@echo "... usage.o"
 	@echo "... usage.i"
 	@echo "... usage.s"

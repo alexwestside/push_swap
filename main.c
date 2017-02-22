@@ -16,14 +16,12 @@ t_stack *ft_fill_stack(int val, t_stack *a)
 	}
 	else
 	{
-		while(list->next)
-			list = list->next;
-		tail = list;
-		list->next = (t_stack *)malloc(sizeof(t_stack));
-		list = list->next;
-		list->val = val;
+		tail = (t_stack *) malloc(sizeof(t_stack));
+		tail->next = list;
 		list->prev = tail;
-		list->next = NULL;
+		tail->prev = NULL;
+		tail->val = val;
+		a = tail;
 	}
 	return (a);
 }
@@ -51,7 +49,7 @@ void  ft_val_check(char **av)
 	}
 }
 
-void ft_check_and_fill(char **av, t_stack *a)
+t_stack *ft_check_and_fill(char **av, t_stack *a)
 {
 	int val;
 
@@ -59,9 +57,11 @@ void ft_check_and_fill(char **av, t_stack *a)
 	while (*av)
 	{
 		val = ft_atoi(*av);
+		ft_check_dublicates(val, a);
 		a = ft_fill_stack(val, a);
 		av++;
 	}
+	return (a);
 }
 
 int main(int ac, char **av)
@@ -72,9 +72,9 @@ int main(int ac, char **av)
 	a = NULL;
 	b = NULL;
 	ac < 2 ? ft_usage(*av) : av++;
-	ft_check_and_fill(av, a);
+	a = ft_check_and_fill(av, a);
+	ft_exit_success(a);
+	ft_sort_sotution(a, b);
 
 	return 0;
-
-	//dddddzmdgdxfgndbgxdgksglskgkn//
 }

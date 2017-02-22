@@ -3,7 +3,7 @@ project(push_swap_c)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.c push_swap.h usage.c)
+set(SOURCE_FILES main.c push_swap.h usage.c swap.c sort_solution.c push.c rorate.c rev_rotate.c)
 
 add_executable(push_swap_c ${SOURCE_FILES})
 
