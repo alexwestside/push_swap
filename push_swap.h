@@ -43,8 +43,10 @@ void ft_check_dublicates(int val, t_stack *a);
 void ft_sort_sotution(t_stack *a, t_stack *b);
 void ft_swap(t_stack **a);
 void ft_push(t_stack **a, t_stack **b);
-void ft_rotate(t_stack **a);
-void ft_rev_rotate(t_stack **a);
-
+void ft_rotate(t_stack **head);
+void ft_rev_rotate(t_stack **head);
+void ft_sswap(t_stack **a, t_stack **b);
+void ft_rrotate(t_stack **a, t_stack **b);
+void ft_rrev_rotate(t_stack **a, t_stack **b);
 
 #endif //PUSH_SWAP_C_PUSH_SWAP_H

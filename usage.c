@@ -106,3 +106,15 @@ void ft_check_dublicates(int val, t_stack *a)
 		list = list->next;
 	}
 }
+
+int ft_mediana(t_stack *head)
+{
+	t_stack *list;
+
+	list = head;
+	while (list)
+	{
+
+	}
+
+}

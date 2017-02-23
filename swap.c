@@ -1,21 +1,28 @@
 
 #include "push_swap.h"
 
-void ft_swap(t_stack **a)
+void ft_swap(t_stack **head)
 {
 	t_stack *list;
 	t_stack *tail;
 
-	list = *a;
-	tail = *a;
+	list = *head;
+	tail = *head;
 
 	tail = list->next;
-	list = tail->next;
-	(*a)->next = list;
-	(*a)->prev = tail;
+	list = tail->next ? tail->next : tail;
+	(*head)->prev = tail;
 	tail->prev = NULL;
-	tail->next = *a;
-	list->prev = *a;
-	*a = tail;
+	(*head)->next = tail->next ? list :NULL;
+	tail->next = *head;
+	list->prev = *head;
+	*head = tail;
 }
+
+void ft_sswap(t_stack **a, t_stack **b)
+{
+	ft_swap(a);
+	ft_swap(b);
+}
+
 
