@@ -48,5 +48,6 @@ void ft_rev_rotate(t_stack **head);
 void ft_sswap(t_stack **a, t_stack **b);
 void ft_rrotate(t_stack **a, t_stack **b);
 void ft_rrev_rotate(t_stack **a, t_stack **b);
+int ft_mediana(t_stack *head);
 
 #endif //PUSH_SWAP_C_PUSH_SWAP_H

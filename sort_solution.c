@@ -17,7 +17,7 @@ void ft_sort_sotution(t_stack *a, t_stack *b)
 
 	res = ft_mediana(a);
 
-
+ft_printf("%d", res);
 
 
 

@@ -110,11 +110,17 @@ void ft_check_dublicates(int val, t_stack *a)
 int ft_mediana(t_stack *head)
 {
 	t_stack *list;
+	int mediana;
+	int len;
 
+	mediana = 0;
+	len = 0;
 	list = head;
 	while (list)
 	{
-
+		mediana += list->val;
+		list = list->next;
+		len++;
 	}
-
+	return (mediana / len);
 }

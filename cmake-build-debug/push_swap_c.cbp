@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="push_swap_c">
-				<Option output="/nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/push_swap_c" prefix_auto="0" extension_auto="0"/>
+			<Target title="push_swap">
+				<Option output="/nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/push_swap" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -53,14 +53,14 @@
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap_c"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="push_swap_c/fast">
-				<Option output="/nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/push_swap_c" prefix_auto="0" extension_auto="0"/>
+			<Target title="push_swap/fast">
+				<Option output="/nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/push_swap" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -75,7 +75,7 @@
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap_c/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/o/orizhiy/ClionProjects/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -83,28 +83,28 @@
 			</Target>
 		</Build>
 		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap/main.c">
-			<Option target="push_swap_c"/>
+			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap/push.c">
-			<Option target="push_swap_c"/>
+			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap/push_swap.h">
-			<Option target="push_swap_c"/>
+			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap/rev_rotate.c">
-			<Option target="push_swap_c"/>
+			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap/rorate.c">
-			<Option target="push_swap_c"/>
+			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap/sort_solution.c">
-			<Option target="push_swap_c"/>
+			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap/swap.c">
-			<Option target="push_swap_c"/>
+			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap/usage.c">
-			<Option target="push_swap_c"/>
+			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/push_swap/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
