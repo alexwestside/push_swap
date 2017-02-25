@@ -37,7 +37,8 @@ t_stack *ft_check_and_fill(char **av, t_stack *a);
 void ft_val_check(char **av);
 long long int ft_atoi_push_swap(char *s);
 void ft_exit_success(t_stack *a);
-void ft_print_stack(t_stack *a);
+void ft_print_stack(t_stack *a, t_stack *b);
+//void ft_print_stack(t_stack *a);
 int ft_if_is_sorted(t_stack *a);
 void ft_check_dublicates(int val, t_stack *a);
 void ft_sort_sotution(t_stack *a, t_stack *b);
@@ -48,6 +49,11 @@ void ft_rev_rotate(t_stack **head);
 void ft_sswap(t_stack **a, t_stack **b);
 void ft_rrotate(t_stack **a, t_stack **b);
 void ft_rrev_rotate(t_stack **a, t_stack **b);
-int ft_mediana(t_stack *head);
+int ft_pivot(t_stack *head);
+//void ft_qsort_stack(t_stack **a, t_stack **b);
+void ft_qsort_stack(t_stack **a, t_stack **b, t_stack *start, t_stack *end);
+void ft_end(t_stack **end, t_stack *a);
+t_stack *ft_partition_stack(t_stack **a, t_stack **start, t_stack **end);
+void ft_swap_list(t_stack **i, t_stack **j);
 
 #endif //PUSH_SWAP_C_PUSH_SWAP_H

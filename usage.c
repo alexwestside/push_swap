@@ -50,31 +50,48 @@ void ft_exit_success(t_stack *a)
 	if (!a->next)
 	{
 		ft_printf("Stack with ONE elemend is alredy ordered!!!\n");
-		ft_print_stack(a);
+		ft_print_stack(a, NULL);
 		exit(EXIT_SUCCESS);
 	}
 	if (!ft_if_is_sorted(a))
 	{
 		ft_printf("Stack is alredy ordered!!!\n");
-		ft_print_stack(a);
+		ft_print_stack(a, NULL);
 		exit(EXIT_SUCCESS);
 	}
 }
 
-void ft_print_stack(t_stack *a)
+void ft_print_stack(t_stack *a, t_stack *b)
 {
-	t_stack * list;
+	t_stack *list1;
+    t_stack *list2;
 
-	list = a;
-	ft_printf("------------\n");
-	ft_printf("| STACK: A |\n");
-	ft_printf("------------\n");
-	while (list)
-	{
-		ft_printf("|     %d    | \n", list->val);
-		list = list->next;
-	}
-	ft_printf("------------");
+	list1 = a;
+    list2 = b;
+    if (list1)
+    {
+        ft_printf("----------------\n");
+        ft_printf("| STACK: [ A ] |\n");
+        ft_printf("----------------\n");
+        while (list1)
+        {
+            ft_printf("|       %d      | \n", list1->val);
+            list1 = list1->next;
+        }
+        ft_printf("----------------\n");
+    }
+    if (list2)
+    {
+        ft_printf("----------------\n");
+        ft_printf("| STACK: [ B ] |\n");
+        ft_printf("----------------\n");
+        while (list2)
+        {
+            ft_printf("|       %d      | \n", list2->val);
+            list2 = list2->next;
+        }
+        ft_printf("----------------\n");
+    }
 }
 
 int ft_if_is_sorted(t_stack *a)
@@ -107,20 +124,12 @@ void ft_check_dublicates(int val, t_stack *a)
 	}
 }
 
-int ft_mediana(t_stack *head)
+int ft_pivot(t_stack *head)
 {
-	t_stack *list;
-	int mediana;
-	int len;
+    t_stack *list;
 
-	mediana = 0;
-	len = 0;
-	list = head;
-	while (list)
-	{
-		mediana += list->val;
-		list = list->next;
-		len++;
-	}
-	return (mediana / len);
+    list = head;
+    while(list->next)
+        list = list->next;
+    return (list->val);
 }
