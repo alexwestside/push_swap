@@ -13,12 +13,19 @@ void ft_end(t_stack **end, t_stack *head)
 
 void ft_swap_list(t_stack **i, t_stack **j)
 {
+    t_stack *tail;
+    t_stack *next;
+
     if (*i != *j)
     {
-        (*i)->next = (*j)->next;
-        (*j)->prev = (*i)->prev;
+        next = (*j)->next;
+        tail = (*i)->prev;
+        (*i)->next = next;
+        (*j)->prev = tail;
         (*i)->prev = *j;
         (*j)->next = *i;
+        tail->next = *j;
+        //ft_swap(i);
         *i = *j;
         *j = (*j)->next;
     }
@@ -30,13 +37,15 @@ t_stack *ft_partition_stack(t_stack **a, t_stack **start, t_stack **end)
     t_stack *j;
     t_stack *pivot;
 
+    //j = *start;
+    //i = j != *end ? *start : (*start)->prev;
     i = (*start)->prev;
     j = *start;
     pivot = *end;
 
     while (j != *end)
     {
-        if (j->val <= pivot->val)
+        if (j->val <= pivot->val && j)
         {
             if (!i)
                 i = *start;
@@ -46,7 +55,10 @@ t_stack *ft_partition_stack(t_stack **a, t_stack **start, t_stack **end)
         }
         j = j->next;
     }
-    ft_swap_list(&(i->next), end);
+    if (!i)
+        ft_swap_list(start, end);
+    else
+        ft_swap_list(&(i->next), end);
     return (i->next);
 
 }
