@@ -1,6 +1,7 @@
 
 #import "push_swap.h"
 
+
 void ft_end(t_stack **end, t_stack *head)
 {
     t_stack *list;
@@ -24,7 +25,8 @@ void ft_swap_list(t_stack **i, t_stack **j)
         (*j)->prev = tail;
         (*i)->prev = *j;
         (*j)->next = *i;
-        tail->next = *j;
+        tail ? tail->next = *j : 0;
+
         //ft_swap(i);
         *i = *j;
         *j = (*j)->next;
@@ -43,9 +45,10 @@ t_stack *ft_partition_stack(t_stack **a, t_stack **start, t_stack **end)
     j = *start;
     pivot = *end;
 
-    while (j != *end)
+    //while (j != *end)
+    while (j && j != *end)
     {
-        if (j->val <= pivot->val && j)
+        if (j->val <= pivot->val)
         {
             if (!i)
                 i = *start;
@@ -56,11 +59,15 @@ t_stack *ft_partition_stack(t_stack **a, t_stack **start, t_stack **end)
         j = j->next;
     }
     if (!i)
+    {
         ft_swap_list(start, end);
+        return ((*start)->next);
+    }
     else
+    {
         ft_swap_list(&(i->next), end);
-    return (i->next);
-
+        return (i->next);
+    }
 }
 void ft_qsort_stack(t_stack **a, t_stack **b, t_stack *start, t_stack *end)
 {
@@ -87,5 +94,6 @@ void ft_sort_sotution(t_stack *a, t_stack *b)
     ft_qsort_stack(&a, &b, start, end);
 
     ft_print_stack(a, b);
+
 }
 

@@ -1,6 +1,3 @@
-//
-// Created by Olexandr Rizhiy on 2/21/17.
-//
 
 #ifndef PUSH_SWAP_C_PUSH_SWAP_H
 #define PUSH_SWAP_C_PUSH_SWAP_H
