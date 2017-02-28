@@ -1,6 +1,7 @@
 
 #include "push_swap.h"
 
+/*
 void ft_push(t_stack **a, t_stack **b)
 {
 	t_stack *list;
@@ -29,4 +30,35 @@ void ft_push(t_stack **a, t_stack **b)
 		list->prev = NULL;
 		tail->prev = NULL;
 	}
+}
+*/
+
+void ft_push(t_stack **a, t_stack **b)
+{
+    t_stack *list;
+    t_stack *tail;
+
+    if (!*b)
+    {
+        list = *a;
+        *b = *a;
+        list =  list->next ? list->next : NULL;
+        *a = list;
+        list ? list->prev = NULL : 0;
+        (*b)->next = NULL;
+        (*b)->prev = NULL;
+    }
+    else if (*a)
+    {
+        list = *a;
+        tail = *b;
+        tail->prev = *a;
+        tail = tail->prev;
+        list = list->next ? list->next : NULL;
+        *a = list;
+        tail->next = *b;
+        *b = tail;
+        list ? list->prev = NULL : 0;
+        tail->prev = NULL;
+    }
 }
