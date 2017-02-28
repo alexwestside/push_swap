@@ -15,11 +15,6 @@
     <list default="true" id="21cbff91-6bc9-4152-a375-ae61878717f9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_printf" afterPath="$PROJECT_DIR$/ft_printf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/push.c" afterPath="$PROJECT_DIR$/push.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/push_swap.h" afterPath="$PROJECT_DIR$/push_swap.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rev_rotate.c" afterPath="$PROJECT_DIR$/rev_rotate.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rorate.c" afterPath="$PROJECT_DIR$/rorate.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swap.c" afterPath="$PROJECT_DIR$/swap.c" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,7 +57,7 @@
           </split-first>
           <split-second>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="main.c" pinned="false" current-in-tab="true">
+              <file leaf-file-name="main.c" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/main.c">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="420">
@@ -72,11 +67,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="sort_solution.c" pinned="false" current-in-tab="false">
+              <file leaf-file-name="sort_solution.c" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/sort_solution.c">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="157">
-                      <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+                    <state relative-caret-position="780">
+                      <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
@@ -411,7 +406,7 @@
       <workItem from="1488129172977" duration="6490000" />
       <workItem from="1488192873863" duration="347000" />
       <workItem from="1488200080687" duration="4778000" />
-      <workItem from="1488285120264" duration="891000" />
+      <workItem from="1488285120264" duration="1722000" />
     </task>
     <task id="LOCAL-00001" summary="test3">
       <created>1487847878226</created>
@@ -469,11 +464,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488139258311</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="qsort_list_5">
+      <created>1488294037566</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1488294037566</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63458000" />
+    <option name="totallyTimeSpent" value="64289000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -513,7 +515,8 @@
     <MESSAGE value="qsort_list_2" />
     <MESSAGE value="qsort_list_3" />
     <MESSAGE value="qsort_list_4" />
-    <option name="LAST_COMMIT_MESSAGE" value="qsort_list_4" />
+    <MESSAGE value="qsort_list_5" />
+    <option name="LAST_COMMIT_MESSAGE" value="qsort_list_5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -827,14 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sort_solution.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swap.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -871,6 +866,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sort_solution.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
