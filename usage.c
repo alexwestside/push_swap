@@ -124,20 +124,6 @@ void ft_check_dublicates(int val, t_stack *a)
 	}
 }
 
-int ft_check_size(t_stack *head)
-{
-    t_stack *list;
-    int size;
-
-    list = head;
-    size = 0;
-    while (list)
-    {
-        list = list->next;
-        size++;
-    }
-    return (size);
-}
 
 void ft_end(t_stack **end, t_stack *head)
 {

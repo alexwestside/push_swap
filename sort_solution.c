@@ -1,41 +1,50 @@
 
 #import "push_swap.h"
 
-
-int ft_pivot(t_stack **a)
+void ft_qsort_stack(t_stack **a, t_stack **b, int len)
 {
-    return (5);
-}
+    //t_stack *list;
+    int pivot;
+    int size;
+    int slen;
 
-void ft_fsort_stack(t_stack **head)
-{
+    size = 0;
+    pivot = 0;
+    slen = len;
 
+    //if (ft_check_size(*a) <= 3)
+    if (len <= 3)
+        return (ft_fsort_stack(a));
 
+    pivot = ft_pivot(a, len);
 
-}
-
-
-void ft_qsort_stack(t_stack **a, t_stack **b)
-{
-    if ()
-
-
-
-
+    while ((len - 1))
+    {
+        if (ft_check_need(a, pivot, len))
+        {
+            if ((*a)->val <= pivot)
+            {
+                ft_push(a, b);
+                size++;
+            } else
+                ft_rotate(a);
+        }
+        else
+            break;
+        len--;
+    }
+    ft_qsort_stack(a, b, slen - size);
+    ft_qsort_stack(b, a, slen - size);
 }
 
 void ft_sort_sotution(t_stack *a, t_stack *b)
 {
-    t_stack *bigin;
-    t_stack *end;
+    int len;
 
-    bigin = a;
-    end = ft_end(&end, a);
-    ft_print_stack(a, NULL);
+    len = ft_check_size(a);
+    ft_qsort_stack(&a, &b, len);
 
-    ft_qsort_stack(&a, &b, );
 
-    ft_print_stack(a, NULL);
 
 }
 

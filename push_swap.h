@@ -25,7 +25,7 @@ void ft_exit_success(t_stack *a);
 void ft_print_stack(t_stack *a, t_stack *b);
 int ft_if_is_sorted(t_stack *a);
 void ft_check_dublicates(int val, t_stack *a);
-void ft_sort_sotution(t_stack *a, t_stack *b);
+//void ft_sort_sotution(t_stack *a, t_stack *b);
 void ft_swap(t_stack **a);
 void ft_push(t_stack **a, t_stack **b);
 void ft_rotate(t_stack **head);
@@ -35,5 +35,10 @@ void ft_rrotate(t_stack **a, t_stack **b);
 void ft_rrev_rotate(t_stack **a, t_stack **b);
 void ft_end(t_stack **end, t_stack *a);
 int ft_check_size(t_stack *a);
+void ft_sort_sotution(t_stack *a, t_stack *b);
+void ft_qsort_stack(t_stack **a, t_stack **b, int len);
+int ft_pivot(t_stack **head, int len);
+void ft_fsort_stack(t_stack **head);
+int ft_check_need(t_stack **a, int pivot, int len);
 
 #endif //PUSH_SWAP_C_PUSH_SWAP_H
