@@ -20,6 +20,9 @@ int ft_check_size(t_stack *head)
 
 int ft_pivot(t_stack **head, int len)
 {
+
+
+
     /*
     int pivot;
     int max;
