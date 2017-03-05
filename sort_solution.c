@@ -24,15 +24,52 @@ void ft_qsort_stack(t_stack **a, t_stack **b, int len)
             {
                 ft_push(a, b);
                 size++;
-            } else
+            }
+            else
                 ft_rotate(a);
         }
         else
             break;
         len--;
     }
+
     ft_qsort_stack(a, b, slen - size);
-    ft_qsort_stack(b, a, slen - size);
+    ft_rev_qsort_stack(a, b, slen - size);
+
+}
+
+void ft_rev_qsort_stack(t_stack **a, t_stack **b, int len)
+{
+    int pivot;
+    int size;
+    int slen;
+
+    size = 0;
+    pivot = 0;
+    slen = len;
+
+    if (len <= 3)
+       return (ft_rev_fsort_stack(b, len));
+
+    pivot = ft_pivot(b, len, -1, -1, 0);
+
+    while ((len - 1) >= 0)
+    {
+        if (ft_rev_check_need(b, pivot, len))
+        {
+            if ((*a)->val >= pivot)
+            {
+                ft_push(b, a);
+                size++;
+            } else
+                ft_rotate(b);
+        }
+        else
+            break;
+        len--;
+    }
+    ft_rev_qsort_stack(a, b, slen - size);
+    ft_qsort_stack(a, b, slen - size);
 }
 
 void ft_sort_sotution(t_stack *a, t_stack *b)

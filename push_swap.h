@@ -40,5 +40,10 @@ void ft_qsort_stack(t_stack **a, t_stack **b, int len);
 int ft_pivot(t_stack **head, int len, int i, int j, int pivot);
 void ft_fsort_stack(t_stack **head, int len);
 int ft_check_need(t_stack **a, int pivot, int len);
+void ft_rev_qsort_stack(t_stack **a, t_stack **b, int len);
+void ft_rev_fsort_stack(t_stack **head, int len);
+int ft_rev_check_need(t_stack **a, int pivot, int len);
+int ft_if_sort(t_stack **a, int len);
+int ft_if_rev_sort(t_stack **head, int len);
 
 #endif //PUSH_SWAP_C_PUSH_SWAP_H

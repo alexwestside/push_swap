@@ -92,6 +92,25 @@ void ft_fsort_stack(t_stack **head, int len)
     }
 }
 
+void ft_rev_fsort_stack(t_stack **head, int len)
+{
+    t_stack *list;
+    t_stack *tail;
+
+    //while (ft_if_is_sorted(*head))
+
+    while(len)
+    {
+        list = *head;
+        tail = list->next;
+        if (list->val < tail->val)
+            ft_swap(head);
+        else if (len - 1)
+            ft_rev_rotate(head);
+        len--;
+    }
+}
+
 int ft_check_need(t_stack **a, int pivot, int len)
 {
     t_stack *list;
@@ -101,6 +120,57 @@ int ft_check_need(t_stack **a, int pivot, int len)
     {
         if (list->val <= pivot)
             return (1);
+        list = list->next;
+        len--;
+    }
+    return (0);
+}
+
+int ft_rev_check_need(t_stack **a, int pivot, int len)
+{
+    t_stack *list;
+
+    list = *a;
+    while(len)
+    {
+        if (list->val >= pivot)
+            return (1);
+        list = list->next;
+        len--;
+    }
+    return (0);
+}
+
+int ft_if_sort(t_stack **head, int len)
+{
+    t_stack *list;
+    int val;
+
+    list = *head;
+    val = list->val;
+    while(len)
+    {
+        if (val > list->val)
+            return (1);
+        val = list->val;
+        list = list->next;
+        len--;
+    }
+    return (0);
+}
+
+int ft_if_rev_sort(t_stack **head, int len)
+{
+    t_stack *list;
+    int val;
+
+    list = *head;
+    val = list->val;
+    while(len)
+    {
+        if (val < list->val)
+            return (1);
+        val = list->val;
         list = list->next;
         len--;
     }
