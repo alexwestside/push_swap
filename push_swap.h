@@ -37,8 +37,8 @@ void ft_end(t_stack **end, t_stack *a);
 int ft_check_size(t_stack *a);
 void ft_sort_sotution(t_stack *a, t_stack *b);
 void ft_qsort_stack(t_stack **a, t_stack **b, int len);
-int ft_pivot(t_stack **head, int len);
-void ft_fsort_stack(t_stack **head);
+int ft_pivot(t_stack **head, int len, int i, int j, int pivot);
+void ft_fsort_stack(t_stack **head, int len);
 int ft_check_need(t_stack **a, int pivot, int len);
 
 #endif //PUSH_SWAP_C_PUSH_SWAP_H

@@ -3,7 +3,6 @@
 
 void ft_qsort_stack(t_stack **a, t_stack **b, int len)
 {
-    //t_stack *list;
     int pivot;
     int size;
     int slen;
@@ -12,13 +11,12 @@ void ft_qsort_stack(t_stack **a, t_stack **b, int len)
     pivot = 0;
     slen = len;
 
-    //if (ft_check_size(*a) <= 3)
     if (len <= 3)
-        return (ft_fsort_stack(a));
+        return (ft_fsort_stack(a, len));
 
-    pivot = ft_pivot(a, len);
+    pivot = ft_pivot(a, len, -1, -1, 0);
 
-    while ((len - 1))
+    while ((len - 1) >= 0)
     {
         if (ft_check_need(a, pivot, len))
         {
