@@ -27,10 +27,11 @@ void ft_sswap(t_stack **a, t_stack **b)
 }
 */
 
-void ft_swap(t_stack **head)
+void ft_swap(t_stack **head, t_type **res, int id)
 {
 	t_stack *list;
 	t_stack *tail;
+    //t_type *lst;
 
 	if (*head)
 	{
@@ -48,12 +49,15 @@ void ft_swap(t_stack **head)
 			*head = tail;
 		}
 	}
-    //ft_printf("%s", SA)
+    (*res)->s = !id ? "SA" : "SB";
+    (*res)->next = (t_type *)malloc(sizeof(t_type));
+    *res = (*res)->next;
+    (*res)->next = NULL;
 }
 
-void ft_sswap(t_stack **a, t_stack **b)
+void ft_sswap(t_stack **a, t_stack **b, t_type **res, int id)
 {
-	ft_swap(a);
-	ft_swap(b);
+	ft_swap(a, res, id);
+	ft_swap(b, res, id);
 }
 

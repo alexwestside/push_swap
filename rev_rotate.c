@@ -25,7 +25,7 @@ void ft_rrev_rotate(t_stack **a, t_stack **b)
 }
 */
 
-void ft_rev_rotate(t_stack **head)
+void ft_rev_rotate(t_stack **head, t_type **res, int id)
 {
     t_stack *list;
     t_stack *tail;
@@ -42,10 +42,14 @@ void ft_rev_rotate(t_stack **head)
         (*head)->prev = list;
         (*head) = list;
     }
+    (*res)->s = !id ? "RRA" : "RRB";
+    (*res)->next = (t_type *)malloc(sizeof(t_type));
+    *res = (*res)->next;
+    (*res)->next = NULL;
 }
 
-void ft_rrev_rotate(t_stack **a, t_stack **b)
+void ft_rrev_rotate(t_stack **a, t_stack **b, t_type **res, int id)
 {
-    ft_rev_rotate(a);
-    ft_rev_rotate(b);
+    ft_rev_rotate(a, res, id);
+    ft_rev_rotate(b, res, id);
 }

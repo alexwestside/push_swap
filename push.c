@@ -33,7 +33,7 @@ void ft_push(t_stack **a, t_stack **b)
 }
 */
 
-void ft_push(t_stack **a, t_stack **b)
+void ft_push(t_stack **a, t_stack **b, t_type **res, int id)
 {
     t_stack *list;
     t_stack *tail;
@@ -61,4 +61,8 @@ void ft_push(t_stack **a, t_stack **b)
         list ? list->prev = NULL : 0;
         tail->prev = NULL;
     }
+    (*res)->s = !id ? "PA" : "PB";
+    (*res)->next = (t_type *)malloc(sizeof(t_type));
+    *res = (*res)->next;
+    (*res)->next = NULL;
 }

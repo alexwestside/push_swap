@@ -68,13 +68,19 @@ int main(int ac, char **av)
 {
 	t_stack *a;
 	t_stack *b;
+    static t_type *res;
+    t_type *head;
 
 	a = NULL;
 	b = NULL;
+    res = (t_type *)malloc(sizeof(t_type));
+    res->next = NULL;
+    head = res;
 	ac < 2 ? ft_usage(*av) : av++;
 	a = ft_check_and_fill(av, a);
 	ft_exit_success(a);
-	ft_sort_sotution(a, b);
+	ft_sort_sotution(a, b, res);
+    ft_print_res(head);
 
 	return 0;
 }

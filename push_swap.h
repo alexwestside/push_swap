@@ -25,6 +25,12 @@ typedef struct 		s_stack
 	struct s_stack	*prev;
 }					t_stack;
 
+typedef struct      s_type
+{
+    char            *s;
+    struct s_type   *next;
+}                   t_type;
+
 void ft_error(void);
 void ft_usage(char *av);
 t_stack *ft_check_and_fill(char **av, t_stack *a);
@@ -36,24 +42,25 @@ void ft_print_stack(t_stack **a, t_stack **b);
 int ft_if_is_sorted(t_stack *a);
 void ft_check_dublicates(int val, t_stack *a);
 //void ft_sort_sotution(t_stack *a, t_stack *b);
-void ft_swap(t_stack **a);
-void ft_push(t_stack **a, t_stack **b);
-void ft_rotate(t_stack **head);
-void ft_rev_rotate(t_stack **head);
-void ft_sswap(t_stack **a, t_stack **b);
-void ft_rrotate(t_stack **a, t_stack **b);
-void ft_rrev_rotate(t_stack **a, t_stack **b);
+void ft_swap(t_stack **a, t_type **res, int id);
+void ft_push(t_stack **a, t_stack **b, t_type **res, int id);
+void ft_rotate(t_stack **head, t_type **res, int id);
+void ft_rev_rotate(t_stack **head, t_type **res, int id);
+void ft_sswap(t_stack **a, t_stack **b, t_type **res, int id);
+void ft_rrotate(t_stack **a, t_stack **b, t_type **res, int id);
+void ft_rrev_rotate(t_stack **a, t_stack **b, t_type **res, int id);
 void ft_end(t_stack **end, t_stack *a);
 int ft_check_size(t_stack *a);
-void ft_sort_sotution(t_stack *a, t_stack *b);
-void ft_qsort_stack(t_stack **a, t_stack **b, int len);
+void ft_sort_sotution(t_stack *a, t_stack *b, t_type *res);
+void ft_qsort_stack(t_stack **a, t_stack **b, int len, t_type **res);
 int ft_pivot(t_stack **head, int len, int i, int j, int pivot);
-void ft_fsort_stack(t_stack **head, int len);
+void ft_fsort_stack(t_stack **head, int len, t_type **res, int id);
 int ft_check_need(t_stack **a, int pivot, int len);
-void ft_rev_qsort_stack(t_stack **a, t_stack **b, int len);
-void ft_rev_fsort_stack(t_stack **head, int len);
+void ft_rev_qsort_stack(t_stack **a, t_stack **b, int len, t_type **res);
+void ft_rev_fsort_stack(t_stack **head, int len, t_type **res, int id);
 int ft_rev_check_need(t_stack **a, int pivot, int len);
 int ft_if_sort(t_stack **a, int len);
 int ft_if_rev_sort(t_stack **head, int len);
+void ft_print_res(t_type *head);
 
 #endif //PUSH_SWAP_C_PUSH_SWAP_H
