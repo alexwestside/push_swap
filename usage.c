@@ -61,6 +61,7 @@ void ft_exit_success(t_stack *a)
 	}
 }
 
+/*
 void ft_print_stack(t_stack *a, t_stack *b)
 {
 	t_stack *list1;
@@ -93,6 +94,41 @@ void ft_print_stack(t_stack *a, t_stack *b)
         ft_printf("----------------\n");
     }
 }
+*/
+
+void ft_print_stack(t_stack **a, t_stack **b)
+{
+    t_stack *list1;
+    t_stack *list2;
+
+    list1 = *a;
+    list2 = *b;
+    ft_printf("----------------   ----------------\n");
+    ft_printf("| STACK: [ A ] |   | STACK: [ B ] |\n");
+    ft_printf("----------------   ----------------\n");
+    while (list1 || list2)
+    {
+        if (list1)
+        {
+            ft_printf("|%8d%7|", list1->val);
+            list1 = list1->next;
+        }
+        else
+            ft_printf("|%15|");
+        ft_printf("   ");
+        if (list2)
+        {
+            ft_printf("|%8d%7|", list2->val);
+            list2 = list2->next;
+        }
+        else
+            ft_printf("|%15|");
+        ft_printf("\n");
+    }
+    ft_printf("----------------   ----------------");
+    ft_printf("\n");
+}
+
 
 int ft_if_is_sorted(t_stack *a)
 {
