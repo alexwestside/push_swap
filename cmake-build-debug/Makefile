@@ -231,6 +231,33 @@ rorate.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/rorate.c.s
 .PHONY : rorate.c.s
 
+sort.o: sort.c.o
+
+.PHONY : sort.o
+
+# target to build an object file
+sort.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort.c.o
+.PHONY : sort.c.o
+
+sort.i: sort.c.i
+
+.PHONY : sort.i
+
+# target to preprocess a source file
+sort.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort.c.i
+.PHONY : sort.c.i
+
+sort.s: sort.c.s
+
+.PHONY : sort.s
+
+# target to generate assembly for a file
+sort.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort.c.s
+.PHONY : sort.c.s
+
 sort_solution.o: sort_solution.c.o
 
 .PHONY : sort_solution.o
@@ -360,6 +387,9 @@ help:
 	@echo "... rorate.o"
 	@echo "... rorate.i"
 	@echo "... rorate.s"
+	@echo "... sort.o"
+	@echo "... sort.i"
+	@echo "... sort.s"
 	@echo "... sort_solution.o"
 	@echo "... sort_solution.i"
 	@echo "... sort_solution.s"

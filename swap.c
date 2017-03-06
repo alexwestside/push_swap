@@ -48,6 +48,7 @@ void ft_swap(t_stack **head)
 			*head = tail;
 		}
 	}
+    //ft_printf("%s", SA)
 }
 
 void ft_sswap(t_stack **a, t_stack **b)

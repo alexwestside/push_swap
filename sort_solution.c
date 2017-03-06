@@ -66,7 +66,7 @@ void ft_rev_qsort_stack(t_stack **a, t_stack **b, int len)
     {
         if (ft_rev_check_need(b, pivot, len))
         {
-            if ((*a)->val >= pivot)
+            if ((*b)->val >= pivot)
             {
                 ft_push(b, a);
                 push++;
@@ -84,7 +84,7 @@ void ft_rev_qsort_stack(t_stack **a, t_stack **b, int len)
     while(rot-- && (*b)->next)
         ft_rev_rotate(b);
     ft_rev_qsort_stack(a, b, slen - push);
-    ft_qsort_stack(a, b, slen - push);
+    ft_qsort_stack(a, b, push);
     while(push--)
         ft_push(a, b);
 }
@@ -134,40 +134,3 @@ t_lst    *quicksort_stack(t_lst **stack_a, t_lst **stack_b, int sort_len)
     return (stack_operation("finish", stack_a, stack_b));
 }
 */
-
-/*
-void ft_qsort_stack(t_stack **a, t_stack **b, int size)
-{
-    int pivot;
-    int len;
-
-    len = 0;
-    if (ft_check_size(*a) <= 3)
-        return (ft_fsort_stack(a));
-    pivot = ft_pivot(a);
-    while (len != size)
-    {
-        if ((*a)->val <= pivot)
-            ft_push(a, b);
-        else if (len != size - 1)
-            ft_rotate(a);
-        len++;
-    }
-    ft_qsort_stack(a, b, size - len);
-}
-
-void ft_sort_sotution(t_stack *a, t_stack *b)
-{
-    int size;
-
-    size = ft_check_size(a);
-    //ft_printf("%d", size);
-
-    ft_print_stack(a, NULL);
-
-    ft_qsort_stack(&a, &b, size);
-
-    ft_print_stack(a, NULL);
-}
- */
-
