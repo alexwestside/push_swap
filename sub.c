@@ -78,17 +78,30 @@ void ft_fsort_stack(t_stack **head, int len)
     t_stack *list;
     t_stack *tail;
 
-    //while (ft_if_is_sorted(*head))
-
-    while(len)
+    if (len == 1)
+        return ;
+    else if (len == 2)
     {
         list = *head;
         tail = list->next;
         if (list->val > tail->val)
             ft_swap(head);
-        else if (len - 1)
-            ft_rev_rotate(head);
-        len--;
+    }
+    else
+    {
+        while (len)
+        {
+            list = *head;
+            tail = list->next;
+            if (list->val > tail->val)
+                ft_swap(head);
+            if (!ft_if_sort(head, len))
+                break;
+            else
+            //else if (len - 1)
+                ft_rev_rotate(head);
+            len--;
+        }
     }
 }
 
@@ -98,14 +111,25 @@ void ft_rev_fsort_stack(t_stack **head, int len)
     t_stack *tail;
 
     //while (ft_if_is_sorted(*head))
-
+    if (len == 1)
+        return ;
+    else if (len == 2)
+    {
+        list = *head;
+        tail = list->next;
+        if (list->val < tail->val)
+            ft_swap(head);
+    }
     while(len)
     {
         list = *head;
         tail = list->next;
         if (list->val < tail->val)
             ft_swap(head);
-        else if (len - 1)
+        if (!ft_if_rev_sort(head, len))
+            break;
+        //else if (len - 1)
+        else
             ft_rev_rotate(head);
         len--;
     }

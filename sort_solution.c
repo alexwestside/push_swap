@@ -37,10 +37,10 @@ void ft_qsort_stack(t_stack **a, t_stack **b, int len)
             break;
         len--;
     }
-    while(rot--)
+    while(rot-- && (*a)->next)
         ft_rev_rotate(a);
     ft_qsort_stack(a, b, slen - push);
-    ft_rev_qsort_stack(a, b, slen - push);
+    ft_rev_qsort_stack(a, b, push);
     while(push--)
         ft_push(b, a);
 }
@@ -81,7 +81,7 @@ void ft_rev_qsort_stack(t_stack **a, t_stack **b, int len)
             break;
         len--;
     }
-    while(rot--)
+    while(rot-- && (*b)->next)
         ft_rev_rotate(b);
     ft_rev_qsort_stack(a, b, slen - push);
     ft_qsort_stack(a, b, slen - push);
