@@ -49,7 +49,7 @@ void ft_swap(t_stack **head, t_type **res, int id)
 			*head = tail;
 		}
 	}
-    (*res)->s = !id ? "SA" : "SB";
+    (*res)->s = !id ? "sa" : "sb";
     (*res)->next = (t_type *)malloc(sizeof(t_type));
     *res = (*res)->next;
     (*res)->next = NULL;

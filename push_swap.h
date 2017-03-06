@@ -62,5 +62,6 @@ int ft_rev_check_need(t_stack **a, int pivot, int len);
 int ft_if_sort(t_stack **a, int len);
 int ft_if_rev_sort(t_stack **head, int len);
 void ft_print_res(t_type *head);
+void ft_optim(t_type *head);
 
 #endif //PUSH_SWAP_C_PUSH_SWAP_H

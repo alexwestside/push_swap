@@ -42,7 +42,7 @@ void ft_rotate(t_stack **head, t_type **res, int id)
         (*head)->next = NULL;
         (*head) = tail;
     }
-    (*res)->s = !id ? "RA" : "RB";
+    (*res)->s = !id ? "ra" : "rb";
     (*res)->next = (t_type *)malloc(sizeof(t_type));
     *res = (*res)->next;
     (*res)->next = NULL;
@@ -52,4 +52,9 @@ void ft_rrotate(t_stack **a, t_stack **b, t_type **res, int id)
 {
     ft_rotate(a, res, id);
     ft_rotate(b, res, id);
+
+    (*res)->s = "rr";
+    (*res)->next = (t_type *)malloc(sizeof(t_type));
+    *res = (*res)->next;
+    (*res)->next = NULL;
 }

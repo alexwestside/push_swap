@@ -1,6 +1,8 @@
 
 #include "push_swap.h"
 
+// ARG="$(~/ClionProjects/ft_random/a.out 1 1000 100)"; ./a.out $ARG | wc -l
+
 void ft_error(void)
 {
 	ft_printf("Error\n");
@@ -39,10 +41,9 @@ long long int ft_atoi_push_swap(char *s)
 	while (*s)
 		res = res * 10 + *(s++) - 48;
 	res = sign < 0 ? res * sign : res;
-	if (res > MAX_INT || res < MIN_INT)
+    if (res > MAX_INT || res < MIN_INT)
 		ft_error();
-	else
-		return (res);
+    return (res);
 }
 
 void ft_exit_success(t_stack *a)
@@ -169,4 +170,49 @@ void ft_end(t_stack **end, t_stack *head)
     while(list->next)
         list = list->next;
     *end = list;
+}
+
+void ft_optim(t_type *head)
+{
+    t_type *list;
+    t_type *tail;
+
+    tail = head;
+    list = head->next;
+    while (list->s)
+    {
+        if (ft_strcmp(tail->s , "SA") && ft_strcmp(list->s, "SB"))
+        {
+            tail->next = list->next;
+            tail->s = "SS";
+            list->next = NULL;
+            free(list);
+            list = tail->next;
+        }
+        //if (tail->s == "RA" && list->s == "RRA");
+
+        if (ft_strcmp(tail->s, "RA") && ft_strcmp(list->s, "RB"))
+        {
+            tail->next = list->next;
+            tail->s = "RR";
+            list->next = NULL;
+            free(list);
+            list = tail->next;
+        }
+        if (ft_strcmp(tail->s, "RRA") && ft_strcmp(list->s, "RRB"))
+        {
+            tail->next = list->next;
+            tail->s = "RRR";
+            list->next = NULL;
+            free(list);
+            list = tail->next;
+        }
+
+        //if (tail->s == "RB" && list->s == "RRB");
+
+        //if (tail->s == "PA" && list->s == "PB");
+        //if (tail->s == "PB" && list->s == "PA");
+        tail = tail->next;
+        list = list->next;
+    }
 }

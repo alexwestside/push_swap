@@ -90,6 +90,4 @@ void ft_print_res(t_type *head)
         ft_printf("%s\n", list->s);
         list = list->next;
     }
-
-
 }
