@@ -13,12 +13,12 @@ void ft_usage(char *av)
 	//ft_putstr(av);
 	//ft_printf("\n");
 	ft_printf("use number >= -2147483648 and <= 2147483647\n");
-	ft_printf("\t -v fot [status operation mode]\n");
-	ft_printf("\t -c fot [color mode]\n");
-	ft_printf("\t -o for [number operation mode]\n");
-	ft_printf("\t -i for [start and end mode]\n");
-	ft_printf("\t -a for [enable all mode]\n");
-	ft_printf("\t -s for [disable all mode]\n");
+	//ft_printf("\t -v fot [status operation mode]\n");
+	//ft_printf("\t -c fot [color mode]\n");
+	//ft_printf("\t -o for [number operation mode]\n");
+	//ft_printf("\t -i for [start and end mode]\n");
+	//ft_printf("\t -a for [enable all mode]\n");
+	//ft_printf("\t -s for [disable all mode]\n");
 	exit(EXIT_FAILURE);
 }
 
@@ -50,13 +50,13 @@ void ft_exit_success(t_stack *a)
 	if (!a->next)
 	{
 		ft_printf("Stack with ONE elemend is alredy ordered!!!\n");
-		ft_print_stack(a, NULL);
+		ft_print_stack(&a, NULL);
 		exit(EXIT_SUCCESS);
 	}
 	if (!ft_if_is_sorted(a))
 	{
 		ft_printf("Stack is alredy ordered!!!\n");
-		ft_print_stack(a, NULL);
+		ft_print_stack(&a, NULL);
 		exit(EXIT_SUCCESS);
 	}
 }

@@ -92,13 +92,13 @@ void ft_rev_qsort_stack(t_stack **a, t_stack **b, int len, t_type **res)
 void ft_sort_sotution(t_stack *a, t_stack *b, t_type *res)
 {
     int len;
-    ft_print_stack(&a, &b);
+    //ft_print_stack(&a, &b);
 
     len = ft_check_size(a);
 
     ft_qsort_stack(&a, &b, len, &res);
 
-    ft_print_stack(&a, &b);
+    //ft_print_stack(&a, &b);
 }
 
 
