@@ -46,6 +46,7 @@ void ft_rotate(t_stack **head, t_type **res, int id)
     (*res)->next = (t_type *)malloc(sizeof(t_type));
     *res = (*res)->next;
     (*res)->next = NULL;
+    //ft_printf("%s", !id ? "ra" : "rb");
 }
 
 void ft_rrotate(t_stack **a, t_stack **b, t_type **res, int id)

@@ -17,10 +17,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.c" afterPath="$PROJECT_DIR$/main.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/push.c" afterPath="$PROJECT_DIR$/push.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/push_swap.h" afterPath="$PROJECT_DIR$/push_swap.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rev_rotate.c" afterPath="$PROJECT_DIR$/rev_rotate.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rorate.c" afterPath="$PROJECT_DIR$/rorate.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sub.c" afterPath="$PROJECT_DIR$/sub.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sort.c" afterPath="$PROJECT_DIR$/sort.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sort_solution.c" afterPath="$PROJECT_DIR$/sort_solution.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swap.c" afterPath="$PROJECT_DIR$/swap.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usage.c" afterPath="$PROJECT_DIR$/usage.c" />
     </list>
@@ -61,11 +61,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="usage.c" pinned="false" current-in-tab="true">
+              <file leaf-file-name="usage.c" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/usage.c">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="852">
-                      <caret line="213" column="32" lean-forward="false" selection-start-line="213" selection-start-column="32" selection-end-line="213" selection-end-column="32" />
+                    <state relative-caret-position="-1958">
+                      <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="76" />
                       <folding />
                     </state>
                   </provider>
@@ -74,18 +74,18 @@
               <file leaf-file-name="sub.c" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/sub.c">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="747">
-                      <caret line="91" column="5" lean-forward="false" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+                    <state relative-caret-position="697">
+                      <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="sort.c" pinned="false" current-in-tab="false">
+              <file leaf-file-name="sort.c" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/sort.c">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="392">
-                      <caret line="131" column="17" lean-forward="false" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="17" />
+                    <state relative-caret-position="480">
+                      <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
                       <folding />
                     </state>
                   </provider>
@@ -95,21 +95,31 @@
           </split-first>
           <split-second>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="main.c" pinned="false" current-in-tab="true">
+              <file leaf-file-name="main.c" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/main.c">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="717">
-                      <caret line="82" column="6" lean-forward="false" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
+                    <state relative-caret-position="722">
+                      <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="sort_solution.c" pinned="false" current-in-tab="false">
+              <file leaf-file-name="sort_solution.c" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/sort_solution.c">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="405">
-                      <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+                    <state relative-caret-position="413">
+                      <caret line="105" column="6" lean-forward="false" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="123" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/ft_printf/123">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="0">
+                      <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
                       <folding />
                     </state>
                   </provider>
@@ -124,8 +134,8 @@
           <file leaf-file-name="swap.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/swap.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="597">
-                  <caret line="51" column="32" lean-forward="false" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+                <state relative-caret-position="525">
+                  <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -134,28 +144,28 @@
           <file leaf-file-name="rorate.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/rorate.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="702">
-                  <caret line="55" column="19" lean-forward="false" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+                <state relative-caret-position="480">
+                  <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="rev_rotate.c" pinned="false" current-in-tab="false">
+          <file leaf-file-name="rev_rotate.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/rev_rotate.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="717">
-                  <caret line="55" column="20" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+                <state relative-caret-position="480">
+                  <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="push.c" pinned="false" current-in-tab="true">
+          <file leaf-file-name="push.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/push.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="717">
-                  <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+                <state relative-caret-position="600">
+                  <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -172,16 +182,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/sort.c" />
-        <option value="$PROJECT_DIR$/sort_solution.c" />
         <option value="$PROJECT_DIR$/push_swap.h" />
         <option value="$PROJECT_DIR$/sub.c" />
         <option value="$PROJECT_DIR$/usage.c" />
         <option value="$PROJECT_DIR$/main.c" />
-        <option value="$PROJECT_DIR$/rorate.c" />
+        <option value="$PROJECT_DIR$/ft_printf/123" />
         <option value="$PROJECT_DIR$/swap.c" />
+        <option value="$PROJECT_DIR$/rorate.c" />
         <option value="$PROJECT_DIR$/rev_rotate.c" />
         <option value="$PROJECT_DIR$/push.c" />
+        <option value="$PROJECT_DIR$/sort.c" />
+        <option value="$PROJECT_DIR$/sort_solution.c" />
       </list>
     </option>
   </component>
@@ -219,6 +230,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="push_swap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="push_swap" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="push_swap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ft_printf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -400,7 +425,7 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="push_swap_c" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="2 11 3 1 7 9 6 5 4 10 8" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="push_swap_c" TARGET_NAME="push_swap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="push_swap_c" RUN_TARGET_NAME="push_swap">
+    <configuration default="false" name="push_swap_c" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="16 5 17 18 1 12 14 11 20 6" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="push_swap_c" TARGET_NAME="push_swap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="push_swap_c" RUN_TARGET_NAME="push_swap">
       <envs />
       <method />
     </configuration>
@@ -447,7 +472,8 @@
       <workItem from="1488720431276" duration="934000" />
       <workItem from="1488722241831" duration="13224000" />
       <workItem from="1488795617665" duration="3365000" />
-      <workItem from="1488804797669" duration="19576000" />
+      <workItem from="1488804797669" duration="19874000" />
+      <workItem from="1488890690451" duration="17781000" />
     </task>
     <task id="LOCAL-00001" summary="test3">
       <created>1487847878226</created>
@@ -582,25 +608,32 @@
       <option name="project" value="LOCAL" />
       <updated>1488827736992</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="output_2">
+      <created>1488831130865</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1488831130865</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133000000" />
+    <option name="totallyTimeSpent" value="151079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07916503" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07877117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6890511" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34671533" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20729928" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3540146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -635,7 +668,8 @@
     <MESSAGE value="algo_6" />
     <MESSAGE value="output_0" />
     <MESSAGE value="output_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="output_1" />
+    <MESSAGE value="output_2" />
+    <option name="LAST_COMMIT_MESSAGE" value="output_2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -647,47 +681,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/sort_solution.c</url>
-          <line>98</line>
-          <option name="timeStamp" value="103" />
+          <line>103</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sort_solution.c</url>
+          <line>41</line>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sort_solution.c</url>
+          <line>87</line>
+          <option name="timeStamp" value="123" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="104" />
+      <option name="time" value="124" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/usage.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/push_swap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -976,18 +988,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/ft_printf/libft/ft_strmap.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sort.c">
+    <entry file="file://$PROJECT_DIR$/ft_printf/libft/ft_strlen.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="131" column="17" lean-forward="false" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1000,66 +1020,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sort_solution.c">
+    <entry file="file://$PROJECT_DIR$/ft_printf/libft/ft_strcmp.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sub.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="91" column="5" lean-forward="false" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/usage.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="213" column="32" lean-forward="false" selection-start-line="213" selection-start-column="32" selection-end-line="213" selection-end-column="32" />
+        <state relative-caret-position="-1958">
+          <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ft_printf/123">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="82" column="6" lean-forward="false" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
+        <state relative-caret-position="722">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swap.c">
+    <entry file="file://$PROJECT_DIR$/sub.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="51" column="32" lean-forward="false" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rev_rotate.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="55" column="20" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rorate.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="55" column="19" lean-forward="false" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+        <state relative-caret-position="697">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/push.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+        <state relative-caret-position="600">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swap.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rorate.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rev_rotate.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sort.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sort_solution.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="105" column="6" lean-forward="false" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
           <folding />
         </state>
       </provider>

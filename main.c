@@ -75,6 +75,7 @@ int main(int ac, char **av)
 	b = NULL;
     res = (t_type *)malloc(sizeof(t_type));
     res->next = NULL;
+    res->s = NULL;
     head = res;
 	ac < 2 ? ft_usage(*av) : av++;
 	a = ft_check_and_fill(av, a);

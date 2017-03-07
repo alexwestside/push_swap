@@ -181,28 +181,28 @@ void ft_optim(t_type *head)
     list = head->next;
     while (list->s)
     {
-        if (ft_strcmp(tail->s , "SA") && ft_strcmp(list->s, "SB"))
+        if (ft_strcmp(tail->s , "sa") && ft_strcmp(list->s, "sb"))
         {
             tail->next = list->next;
-            tail->s = "SS";
+            tail->s = "ss";
             list->next = NULL;
             free(list);
             list = tail->next;
         }
         //if (tail->s == "RA" && list->s == "RRA");
 
-        if (ft_strcmp(tail->s, "RA") && ft_strcmp(list->s, "RB"))
+        if (ft_strcmp(tail->s, "ra") && ft_strcmp(list->s, "rb"))
         {
             tail->next = list->next;
-            tail->s = "RR";
+            tail->s = "rr";
             list->next = NULL;
             free(list);
             list = tail->next;
         }
-        if (ft_strcmp(tail->s, "RRA") && ft_strcmp(list->s, "RRB"))
+        if (ft_strcmp(tail->s, "rra") && ft_strcmp(list->s, "rrb"))
         {
             tail->next = list->next;
-            tail->s = "RRR";
+            tail->s = "rrr";
             list->next = NULL;
             free(list);
             list = tail->next;
