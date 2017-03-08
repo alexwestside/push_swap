@@ -111,6 +111,7 @@ void ft_rev_qsort_stack(t_stack **a, t_stack **b, int len, t_type **res)
     ft_qsort_stack(a, b, push, res);
     while(push--)
     {
+        //if (ft_if_sort(a, ft_check_size(*a)))
         //if (ft_if_sort(a, push + slen))
             ft_push(a, b, res, 1);
     }
@@ -125,7 +126,7 @@ void ft_sort_sotution(t_stack *a, t_stack *b, t_type *res)
 
     ft_qsort_stack(&a, &b, len, &res);
 
-   // ft_print_stack(&a, &b);
+    //ft_print_stack(&a, &b);
 }
 
 
