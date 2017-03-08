@@ -1,13 +1,12 @@
 
 #include "push_swap.h"
 
-
 void ft_sort(t_stack **head, int len, t_type **res, int id)
 {
     if (!id)
     {
         if (!ft_if_sort(head, len))
-            ft_f_sort(head, len, res, id);
+            ft_f_norm_sort(head, len, res, id);
         return;
     }
     else
@@ -18,11 +17,7 @@ void ft_sort(t_stack **head, int len, t_type **res, int id)
     }
 }
 
-
-
-
-
-
+/*
 void ft_fsort_stack(t_stack **head, int len, t_type **res, int id)
 {
     t_stack *list;
@@ -65,39 +60,6 @@ void ft_fsort_stack(t_stack **head, int len, t_type **res, int id)
             if (list->val > tail->val)
                 ft_swap(head, res, id);
         }
-        /*while (len)
-        {
-            list = *head;
-            tail = list->next;
-            if (list->val > tail->val)
-                ft_swap(head);
-            if (!ft_if_sort(head, len))
-                break;
-            else
-                ft_rotate(head);
-            len--;
-        }
-        ft_rev_rotate(head);
-        if ((*head)->val > tail->val)
-            ft_swap(head);
-            */
-        /*
-        else
-        {
-            while (len)
-            {
-                list = *head;
-                tail = list->next;
-                if (list->val > tail->val)
-                    ft_swap(head);
-                if (!ft_if_sort(head, len))
-                    break;
-                else
-                //else if (len - 1)
-                    ft_rev_rotate(head);
-                len--;
-            }
-            */
     }
 }
 
@@ -145,22 +107,8 @@ void ft_rev_fsort_stack(t_stack **head, int len, t_type **res, int id)
                 ft_swap(head, res, id);
         }
     }
-    /*
-    while(len)
-    {
-        list = *head;
-        tail = list->next;
-        if (list->val < tail->val)
-            ft_swap(head);
-        if (!ft_if_rev_sort(head, len))
-            break;
-        //else if (len - 1)
-        else
-            ft_rev_rotate(head);
-        len--;
-    }
-     */
 }
+*/
 
 int ft_if_sort(t_stack **head, int len)
 {

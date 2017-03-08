@@ -54,10 +54,10 @@ int ft_check_size(t_stack *a);
 void ft_sort_sotution(t_stack *a, t_stack *b, t_type *res);
 void ft_qsort_stack(t_stack **a, t_stack **b, int len, t_type **res);
 int ft_pivot(t_stack **head, int len, int i, int j, int pivot);
-void ft_fsort_stack(t_stack **head, int len, t_type **res, int id);
+//void ft_fsort_stack(t_stack **head, int len, t_type **res, int id);
 int ft_check_need(t_stack **a, int pivot, int len);
 void ft_rev_qsort_stack(t_stack **a, t_stack **b, int len, t_type **res);
-void ft_rev_fsort_stack(t_stack **head, int len, t_type **res, int id);
+//void ft_rev_fsort_stack(t_stack **head, int len, t_type **res, int id);
 int ft_rev_check_need(t_stack **a, int pivot, int len);
 int ft_if_sort(t_stack **a, int len);
 int ft_if_rev_sort(t_stack **head, int len);
@@ -66,14 +66,21 @@ void ft_optim(t_type *head);
 
 
 void ft_sort(t_stack **head, int len, t_type **res, int id);
+
 void ft_f_rev_sort(t_stack **head, int len, t_type **res, int id);
 void ft_s_rev_sort(t_stack **head, int len, t_type **res, int id);
 int ft_check_r_sort_type(t_stack **head);
+
 void ft_sort_in_type_0(t_stack **head, t_type **res, int len);
 void ft_sort_in_type_1(t_stack **head, t_type **res, int len);
 void ft_sort_in_type_2(t_stack **head, t_type **res, int len);
 void ft_sort_in_type_3(t_stack **head, t_type **res, int len);
 void ft_sort_in_type_4(t_stack **head, t_type **res, int len);
 void ft_sort_in_type_5(t_stack **head, t_type **res, int len);
+
+void ft_f_norm_sort(t_stack **head, int len, t_type **res, int id);
+void ft_s_norm_sort(t_stack **head, int len, t_type **res, int id);
+int ft_check_n_sort_type(t_stack **head);
+
 
 #endif //PUSH_SWAP_C_PUSH_SWAP_H

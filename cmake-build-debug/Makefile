@@ -258,6 +258,33 @@ sort.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort.c.s
 .PHONY : sort.c.s
 
+sort_norm.o: sort_norm.c.o
+
+.PHONY : sort_norm.o
+
+# target to build an object file
+sort_norm.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort_norm.c.o
+.PHONY : sort_norm.c.o
+
+sort_norm.i: sort_norm.c.i
+
+.PHONY : sort_norm.i
+
+# target to preprocess a source file
+sort_norm.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort_norm.c.i
+.PHONY : sort_norm.c.i
+
+sort_norm.s: sort_norm.c.s
+
+.PHONY : sort_norm.s
+
+# target to generate assembly for a file
+sort_norm.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort_norm.c.s
+.PHONY : sort_norm.c.s
+
 sort_rev.o: sort_rev.c.o
 
 .PHONY : sort_rev.o
@@ -311,6 +338,33 @@ sort_solution.s: sort_solution.c.s
 sort_solution.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort_solution.c.s
 .PHONY : sort_solution.c.s
+
+sort_type.o: sort_type.c.o
+
+.PHONY : sort_type.o
+
+# target to build an object file
+sort_type.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort_type.c.o
+.PHONY : sort_type.c.o
+
+sort_type.i: sort_type.c.i
+
+.PHONY : sort_type.i
+
+# target to preprocess a source file
+sort_type.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort_type.c.i
+.PHONY : sort_type.c.i
+
+sort_type.s: sort_type.c.s
+
+.PHONY : sort_type.s
+
+# target to generate assembly for a file
+sort_type.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort_type.c.s
+.PHONY : sort_type.c.s
 
 sub.o: sub.c.o
 
@@ -417,12 +471,18 @@ help:
 	@echo "... sort.o"
 	@echo "... sort.i"
 	@echo "... sort.s"
+	@echo "... sort_norm.o"
+	@echo "... sort_norm.i"
+	@echo "... sort_norm.s"
 	@echo "... sort_rev.o"
 	@echo "... sort_rev.i"
 	@echo "... sort_rev.s"
 	@echo "... sort_solution.o"
 	@echo "... sort_solution.i"
 	@echo "... sort_solution.s"
+	@echo "... sort_type.o"
+	@echo "... sort_type.i"
+	@echo "... sort_type.s"
 	@echo "... sub.o"
 	@echo "... sub.i"
 	@echo "... sub.s"
