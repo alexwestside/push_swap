@@ -81,7 +81,7 @@ int main(int ac, char **av)
 	a = ft_check_and_fill(av, a);
 	ft_exit_success(a);
 	ft_sort_sotution(a, b, res);
-    ft_optim(head);
+    //ft_optim(head);
     ft_print_res(head);
 
 	return 0;

@@ -42,18 +42,20 @@ int ft_check_n_sort_type(t_stack **head)
     t_stack *tail;
 
     list = (*head)->next;
-    tail = tail->next;
+    tail = list->next;
     if ((*head)->val > list->val && (*head)->val > tail->val && list->val > tail->val)
         return (4);
     else if ((*head)->val > list->val && (*head)->val > tail->val && list->val < tail->val)
         return (5);
-    else if ((*head)->val < list->val && (*head)->val > tail->val && list->val > list->val)
+    else if ((*head)->val < list->val && (*head)->val > tail->val && list->val > tail->val)
         return (3);
     else if ((*head)->val > list->val && (*head)->val < tail->val && list->val < tail->val)
         return (2);
     else if ((*head)->val < list->val && (*head)->val < tail->val && list->val < tail->val)
         return (0);
-    else if ((*head)->val < list->val && (*head)->val > tail->val && list->val > tail->val)
+    else if ((*head)->val < list->val && (*head)->val < tail->val && list->val > tail->val)
         return (1);
+    else
+        return (-1);
 }
 

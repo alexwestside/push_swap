@@ -5,13 +5,13 @@ void ft_sort(t_stack **head, int len, t_type **res, int id)
 {
     if (!id)
     {
-        if (!ft_if_sort(head, len))
+        if (ft_if_sort(head, len))
             ft_f_norm_sort(head, len, res, id);
         return;
     }
     else
     {
-        if (!ft_if_rev_sort(head, len))
+        if (ft_if_rev_sort(head, len))
             ft_f_rev_sort(head, len, res, id);
         return;
     }
