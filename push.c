@@ -29,9 +29,13 @@ void ft_push(t_stack **a, t_stack **b, t_type **res, int id)
         list ? list->prev = NULL : 0;
         tail->prev = NULL;
     }
+    t_type *p;
+    p = *res;
+
     (*res)->s = !id ? "pa" : "pb";
     (*res)->next = (t_type *)malloc(sizeof(t_type));
     *res = (*res)->next;
+    (*res)->prev = p;
     (*res)->next = NULL;
     //ft_printf("%s", !id ? "pa" : "pb");
 }

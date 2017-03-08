@@ -29,6 +29,7 @@ typedef struct      s_type
 {
     char            *s;
     struct s_type   *next;
+    struct s_type	*prev;
 }                   t_type;
 
 void ft_error(void);

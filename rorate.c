@@ -20,9 +20,13 @@ void ft_rotate(t_stack **head, t_type **res, int id)
     }
     if ((*head)->next)
     {
+        t_type *p;
+        p = *res;
+
         (*res)->s = !id ? "ra" : "rb";
         (*res)->next = (t_type *) malloc(sizeof(t_type));
         *res = (*res)->next;
+        (*res)->prev = p;
         (*res)->next = NULL;
         //ft_printf("%s", !id ? "ra" : "rb");
     }

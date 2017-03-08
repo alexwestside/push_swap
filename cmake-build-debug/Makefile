@@ -150,6 +150,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/main.c.s
 .PHONY : main.c.s
 
+optim.o: optim.c.o
+
+.PHONY : optim.o
+
+# target to build an object file
+optim.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/optim.c.o
+.PHONY : optim.c.o
+
+optim.i: optim.c.i
+
+.PHONY : optim.i
+
+# target to preprocess a source file
+optim.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/optim.c.i
+.PHONY : optim.c.i
+
+optim.s: optim.c.s
+
+.PHONY : optim.s
+
+# target to generate assembly for a file
+optim.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/optim.c.s
+.PHONY : optim.c.s
+
 push.o: push.c.o
 
 .PHONY : push.o
@@ -459,6 +486,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... optim.o"
+	@echo "... optim.i"
+	@echo "... optim.s"
 	@echo "... push.o"
 	@echo "... push.i"
 	@echo "... push.s"
