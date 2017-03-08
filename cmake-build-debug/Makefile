@@ -258,6 +258,33 @@ sort.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort.c.s
 .PHONY : sort.c.s
 
+sort_rev.o: sort_rev.c.o
+
+.PHONY : sort_rev.o
+
+# target to build an object file
+sort_rev.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort_rev.c.o
+.PHONY : sort_rev.c.o
+
+sort_rev.i: sort_rev.c.i
+
+.PHONY : sort_rev.i
+
+# target to preprocess a source file
+sort_rev.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort_rev.c.i
+.PHONY : sort_rev.c.i
+
+sort_rev.s: sort_rev.c.s
+
+.PHONY : sort_rev.s
+
+# target to generate assembly for a file
+sort_rev.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort_rev.c.s
+.PHONY : sort_rev.c.s
+
 sort_solution.o: sort_solution.c.o
 
 .PHONY : sort_solution.o
@@ -390,6 +417,9 @@ help:
 	@echo "... sort.o"
 	@echo "... sort.i"
 	@echo "... sort.s"
+	@echo "... sort_rev.o"
+	@echo "... sort_rev.i"
+	@echo "... sort_rev.s"
 	@echo "... sort_solution.o"
 	@echo "... sort_solution.i"
 	@echo "... sort_solution.s"
