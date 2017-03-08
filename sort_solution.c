@@ -38,16 +38,18 @@ void ft_qsort_stack(t_stack **a, t_stack **b, int len, t_type **res)
             break;
         len--;
     }
-    pivot = ft_pivot(a, slen - push, -1, -1, 0);
-    while(rot-- && (*a)->next/*ft_check_size(*a) + push != len*/)
+    //pivot = ft_pivot(a, slen - push, -1, -1, 0);
+    while(rot-- && /*(*a)->next*/ft_check_size(*a) + push != slen)
     {
-        if ((*a)->val <= pivot)
+        /*if ((*a)->val <= pivot)
         {
             ft_push(a, b, res, 1);
             push++;
         }
         else
             ft_rev_rotate(a, res, 0);
+            */
+        ft_rev_rotate(a, res, 0);
     }
     ft_qsort_stack(a, b, slen - push, res);
     ft_rev_qsort_stack(a, b, push, res);
@@ -92,17 +94,18 @@ void ft_rev_qsort_stack(t_stack **a, t_stack **b, int len, t_type **res)
             break;
         len--;
     }
-    pivot = ft_pivot(b, len, -1, -1, 0);
-    while(rot-- && (*b)->next/*ft_check_size(*b) + push != len*/)
+    //pivot = ft_pivot(b, len, -1, -1, 0);
+    while(rot-- && /*(*b)->next*/ft_check_size(*b) + push != slen)
     {
-        if ((*a)->val >= pivot)
+        /*if ((*a)->val >= pivot)
         {
-            ft_push(b, a, res, 1);
+            ft_push(b, a, res, 0);
             push++;
         }
         else
-            ft_rev_rotate(b, res, 0);
-        //ft_rev_rotate(b, res, 1);
+            ft_rev_rotate(b, res, 1);
+            */
+        ft_rev_rotate(b, res, 1);
     }
     ft_rev_qsort_stack(a, b, slen - push, res);
     ft_qsort_stack(a, b, push, res);
@@ -116,13 +119,13 @@ void ft_rev_qsort_stack(t_stack **a, t_stack **b, int len, t_type **res)
 void ft_sort_sotution(t_stack *a, t_stack *b, t_type *res)
 {
     int len;
-    ft_print_stack(&a, &b);
+    //ft_print_stack(&a, &b);
 
     len = ft_check_size(a);
 
     ft_qsort_stack(&a, &b, len, &res);
 
-    ft_print_stack(&a, &b);
+   // ft_print_stack(&a, &b);
 }
 
 
