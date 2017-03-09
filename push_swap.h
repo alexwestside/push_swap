@@ -84,9 +84,13 @@ int ft_check_n_sort_type(t_stack **head);
 
 int ft_check_end(t_stack **head, int len);
 
-void ft_optim(t_type **head);
+void    ft_optim(t_type **head);
 int ft_optim_del(t_type *list);
 int ft_optim_change(t_type *list);
+void ft_optim_change_type(t_type **list, int *i);
+int ft_optim_2(t_type **head, int i);
+
+int ft_check_size_2(t_type *head);
 
 
 #endif //PUSH_SWAP_C_PUSH_SWAP_H

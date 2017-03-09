@@ -30,6 +30,7 @@ void ft_swap(t_stack **head, t_type **res, int id)
     (*res)->next = (t_type *)malloc(sizeof(t_type));
     *res = (*res)->next;
     //(*res)->prev = p;
+    (*res)->s = NULL;
     (*res)->next = NULL;
     //ft_printf("%s", !id ? "sa" : "sb");
 }

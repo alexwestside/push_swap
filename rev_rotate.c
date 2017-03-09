@@ -40,5 +40,6 @@ void ft_rrev_rotate(t_stack **a, t_stack **b, t_type **res, int id)
     (*res)->s = "rrr";
     (*res)->next = (t_type *)malloc(sizeof(t_type));
     *res = (*res)->next;
+    (*res)->s = NULL;
     (*res)->next = NULL;
 }

@@ -1,41 +1,44 @@
 
 #include "push_swap.h"
 
-void ft_optim_change_type(t_type **list);
-
-void ft_optim(t_type **head)
+void    ft_optim(t_type **head)
 {
-    t_type *list;
-    t_type *tail;
     int i;
 
-    i = 0;
-    while (!i)
+    while (1)
     {
-        tail = *head;
-        list = tail->next;
-        while (list)
-        {
-            if (ft_optim_del(list))
-            {
-                tail->next = list->next->next;
-                list = tail->next;
-            }
-            else if(ft_optim_change(list))
-            {
-                ft_optim_change_type(&list);
-
-            }
-            else
-            {
-                tail = list;
-                list = list->next;
-            }
-        }
+        if (!ft_optim_2(head, 0))
+            break;
     }
 }
 
-void ft_optim_change_type(t_type **list)
+int ft_optim_2(t_type **head, int i)
+{
+    t_type *list;
+    t_type *tail;
+
+    tail = *head;
+    list = tail->next;
+    while (list)
+    {
+        if (list->s && ft_optim_del(list))
+        {
+            tail->next = list->next->next;
+            list = tail->next;
+            i++;
+        }
+        else if (list->s && ft_optim_change(list))
+            ft_optim_change_type(&list, &i);
+        else
+        {
+            tail = list;
+            list = list->next;
+        }
+    }
+    return (i);
+}
+
+void ft_optim_change_type(t_type **list, int *i)
 {
     if (!ft_strcmp((*list)->s, "SA") || !ft_strcmp((*list)->s, "SB"))
     {
@@ -52,6 +55,7 @@ void ft_optim_change_type(t_type **list)
         (*list)->next = (*list)->next->next;
         (*list)->s = "RRR";
     }
+    (*i)++;
 }
 
 int ft_optim_del(t_type *list)

@@ -75,15 +75,17 @@ int main(int ac, char **av)
 	b = NULL;
     res = (t_type *)malloc(sizeof(t_type));
     res->next = NULL;
-    res->prev = NULL;
+    //res->prev = NULL;
     res->s = NULL;
     head = res;
 	ac < 2 ? ft_usage(*av) : av++;
 	a = ft_check_and_fill(av, a);
 	ft_exit_success(a);
 	ft_sort_sotution(a, b, res);
+    ft_printf("%d\n", ft_check_size_2(head));
     ft_optim(&head);
-    ft_print_res(head);
+    ft_printf("%d\n", ft_check_size_2(head));
+    //ft_print_res(head);
 
 	return 0;
 }
