@@ -8,7 +8,7 @@ void ft_f_norm_sort(t_stack **head, int len, t_type **res, int id)
     i = 0;
     if (len == 1 || len == 2)
         ft_s_norm_sort(head, len, res, id);
-    else
+    else if (len == 3)
     {
         i = ft_check_n_sort_type(head);
         i == 0 ? ft_sort_in_type_0(head, res, id) : 0;

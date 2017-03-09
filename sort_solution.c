@@ -18,7 +18,7 @@ void ft_qsort_stack(t_stack **a, t_stack **b, int len, t_type **res)
 
     pivot = ft_pivot(a, len, -1, -1, 0);
 
-    while ((len - 1) >= 0/*ft_count_num(a, slen - push - rot)*/)
+    while ((len - 1) >= 0)
     {
         if (ft_check_need(a, pivot, len))
         {

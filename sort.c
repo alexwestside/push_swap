@@ -159,16 +159,3 @@ int ft_if_rev_sort(t_stack **head, int len)
     return (0);
 }
 
-/*
-int ft_count_num(t_stack **head, int len)
-{
-    t_stack *list;
-
-    list = *head;
-
-
-
-
-}
- */
-
