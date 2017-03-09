@@ -15,7 +15,8 @@
     <list default="true" id="21cbff91-6bc9-4152-a375-ae61878717f9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_printf" afterPath="$PROJECT_DIR$/ft_printf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usage.c" afterPath="$PROJECT_DIR$/usage.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/optim.c" afterPath="$PROJECT_DIR$/optim.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/push_swap.h" afterPath="$PROJECT_DIR$/push_swap.h" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,7 +32,7 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.72307694">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.54642224">
+        <splitter split-orientation="horizontal" split-proportion="0.35520095">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
@@ -44,17 +45,17 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="push_swap.h" pinned="false" current-in-tab="false">
+              <file leaf-file-name="push_swap.h" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/push_swap.h">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="465">
-                      <caret line="31" column="6" lean-forward="false" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+                    <state relative-caret-position="999">
+                      <caret line="88" column="34" lean-forward="false" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="usage.c" pinned="false" current-in-tab="true">
+              <file leaf-file-name="usage.c" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/usage.c">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="270">
@@ -141,8 +142,8 @@
               <file leaf-file-name="optim.c" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/optim.c">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="330">
-                      <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                    <state relative-caret-position="490">
+                      <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
                       <folding />
                     </state>
                   </provider>
@@ -223,14 +224,14 @@
         <option value="$PROJECT_DIR$/sort.c" />
         <option value="$PROJECT_DIR$/sort_solution.c" />
         <option value="$PROJECT_DIR$/123" />
-        <option value="$PROJECT_DIR$/push_swap.h" />
         <option value="$PROJECT_DIR$/swap.c" />
         <option value="$PROJECT_DIR$/rorate.c" />
         <option value="$PROJECT_DIR$/rev_rotate.c" />
         <option value="$PROJECT_DIR$/push.c" />
         <option value="$PROJECT_DIR$/main.c" />
-        <option value="$PROJECT_DIR$/optim.c" />
         <option value="$PROJECT_DIR$/usage.c" />
+        <option value="$PROJECT_DIR$/push_swap.h" />
+        <option value="$PROJECT_DIR$/optim.c" />
       </list>
     </option>
   </component>
@@ -500,7 +501,7 @@
       <workItem from="1488890690451" duration="18649000" />
       <workItem from="1488969946056" duration="23644000" />
       <workItem from="1489053745887" duration="3658000" />
-      <workItem from="1489064979632" duration="7262000" />
+      <workItem from="1489064979632" duration="10313000" />
     </task>
     <task id="LOCAL-00001" summary="test3">
       <created>1487847878226</created>
@@ -712,11 +713,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489075266578</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="algo_sort_5">
+      <created>1489075302409</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1489075302409</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186511000" />
+    <option name="totallyTimeSpent" value="189562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -1130,14 +1138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/push_swap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="6" lean-forward="false" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swap.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -1170,10 +1170,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sort_solution.c">
+    <entry file="file://$PROJECT_DIR$/usage.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="90" column="4" lean-forward="false" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
+        <state relative-caret-position="270">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1186,18 +1186,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/optim.c">
+    <entry file="file://$PROJECT_DIR$/sort_solution.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="90" column="4" lean-forward="false" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usage.c">
+    <entry file="file://$PROJECT_DIR$/push_swap.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="999">
+          <caret line="88" column="34" lean-forward="false" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
           <folding />
         </state>
       </provider>

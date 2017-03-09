@@ -63,7 +63,6 @@ int ft_rev_check_need(t_stack **a, int pivot, int len);
 int ft_if_sort(t_stack **a, int len);
 int ft_if_rev_sort(t_stack **head, int len);
 void ft_print_res(t_type *head);
-void ft_optim(t_type *head);
 
 
 void ft_sort(t_stack **head, int len, t_type **res, int id);
@@ -84,6 +83,10 @@ void ft_s_norm_sort(t_stack **head, int len, t_type **res, int id);
 int ft_check_n_sort_type(t_stack **head);
 
 int ft_check_end(t_stack **head, int len);
+
+void ft_optim(t_type **head);
+int ft_optim_del(t_type *list);
+int ft_optim_change(t_type *list);
 
 
 #endif //PUSH_SWAP_C_PUSH_SWAP_H
