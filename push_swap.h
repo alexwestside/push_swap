@@ -29,7 +29,7 @@ typedef struct      s_type
 {
     char            *s;
     struct s_type   *next;
-    struct s_type	*prev;
+    //struct s_type	*prev;
 }                   t_type;
 
 void ft_error(void);
@@ -83,7 +83,7 @@ void ft_f_norm_sort(t_stack **head, int len, t_type **res, int id);
 void ft_s_norm_sort(t_stack **head, int len, t_type **res, int id);
 int ft_check_n_sort_type(t_stack **head);
 
-int ft_check_end(t_stack **head; int len);
+int ft_check_end(t_stack **head, int len);
 
 
 #endif //PUSH_SWAP_C_PUSH_SWAP_H
