@@ -15,12 +15,6 @@ void ft_usage(char *av)
 	//ft_putstr(av);
 	//ft_printf("\n");
 	ft_printf("use number >= -2147483648 and <= 2147483647\n");
-	//ft_printf("\t -v fot [status operation mode]\n");
-	//ft_printf("\t -c fot [color mode]\n");
-	//ft_printf("\t -o for [number operation mode]\n");
-	//ft_printf("\t -i for [start and end mode]\n");
-	//ft_printf("\t -a for [enable all mode]\n");
-	//ft_printf("\t -s for [disable all mode]\n");
 	exit(EXIT_FAILURE);
 }
 
@@ -61,41 +55,6 @@ void ft_exit_success(t_stack *a)
 		exit(EXIT_SUCCESS);
 	}
 }
-
-/*
-void ft_print_stack(t_stack *a, t_stack *b)
-{
-	t_stack *list1;
-    t_stack *list2;
-
-	list1 = a;
-    list2 = b;
-    if (list1)
-    {
-        ft_printf("----------------\n");
-        ft_printf("| STACK: [ A ] |\n");
-        ft_printf("----------------\n");
-        while (list1)
-        {
-            ft_printf("|       %d      | \n", list1->val);
-            list1 = list1->next;
-        }
-        ft_printf("----------------\n");
-    }
-    if (list2)
-    {
-        ft_printf("----------------\n");
-        ft_printf("| STACK: [ B ] |\n");
-        ft_printf("----------------\n");
-        while (list2)
-        {
-            ft_printf("|       %d      | \n", list2->val);
-            list2 = list2->next;
-        }
-        ft_printf("----------------\n");
-    }
-}
-*/
 
 void ft_print_stack(t_stack **a, t_stack **b)
 {
@@ -162,7 +121,6 @@ void ft_check_dublicates(int val, t_stack *a)
 		list = list->next;
 	}
 }
-
 
 void ft_end(t_stack **end, t_stack *head)
 {

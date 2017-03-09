@@ -15,15 +15,6 @@
     <list default="true" id="21cbff91-6bc9-4152-a375-ae61878717f9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ft_printf" afterPath="$PROJECT_DIR$/ft_printf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.c" afterPath="$PROJECT_DIR$/main.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/optim.c" afterPath="$PROJECT_DIR$/optim.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/push.c" afterPath="$PROJECT_DIR$/push.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/push_swap.h" afterPath="$PROJECT_DIR$/push_swap.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rev_rotate.c" afterPath="$PROJECT_DIR$/rev_rotate.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rorate.c" afterPath="$PROJECT_DIR$/rorate.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sort.c" afterPath="$PROJECT_DIR$/sort.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sort_solution.c" afterPath="$PROJECT_DIR$/sort_solution.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swap.c" afterPath="$PROJECT_DIR$/swap.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usage.c" afterPath="$PROJECT_DIR$/usage.c" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,8 +57,8 @@
               <file leaf-file-name="usage.c" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/usage.c">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="669">
-                      <caret line="59" column="8" lean-forward="false" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+                    <state relative-caret-position="270">
+                      <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
                       <folding />
                     </state>
                   </provider>
@@ -229,7 +220,6 @@
         <option value="$PROJECT_DIR$/sort_type.c" />
         <option value="$PROJECT_DIR$/sort_rev.c" />
         <option value="$PROJECT_DIR$/sort_norm.c" />
-        <option value="$PROJECT_DIR$/usage.c" />
         <option value="$PROJECT_DIR$/sort.c" />
         <option value="$PROJECT_DIR$/sort_solution.c" />
         <option value="$PROJECT_DIR$/123" />
@@ -240,6 +230,7 @@
         <option value="$PROJECT_DIR$/push.c" />
         <option value="$PROJECT_DIR$/main.c" />
         <option value="$PROJECT_DIR$/optim.c" />
+        <option value="$PROJECT_DIR$/usage.c" />
       </list>
     </option>
   </component>
@@ -509,7 +500,7 @@
       <workItem from="1488890690451" duration="18649000" />
       <workItem from="1488969946056" duration="23644000" />
       <workItem from="1489053745887" duration="3658000" />
-      <workItem from="1489064979632" duration="7220000" />
+      <workItem from="1489064979632" duration="7262000" />
     </task>
     <task id="LOCAL-00001" summary="test3">
       <created>1487847878226</created>
@@ -714,11 +705,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489054764175</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="algo_sort_5">
+      <created>1489075266578</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1489075266578</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186469000" />
+    <option name="totallyTimeSpent" value="186511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -1172,14 +1170,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usage.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="59" column="8" lean-forward="false" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sort_solution.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1200,6 +1190,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usage.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding />
         </state>
       </provider>
