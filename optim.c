@@ -9,6 +9,7 @@ void    ft_optim(t_type **head)
     {
         if (!ft_optim_2(head, 0))
             break;
+        //write(1, "OK\n", 3);
     }
 }
 
@@ -21,13 +22,13 @@ int ft_optim_2(t_type **head, int i)
     list = tail->next;
     while (list)
     {
-        if (list->s && ft_optim_del(list))
+        if (list->s && list->next->s && ft_optim_del(list))
         {
             tail->next = list->next->next;
             list = tail->next;
             i++;
         }
-        else if (list->s && ft_optim_change(list))
+        else if (list->s && list->next->s && ft_optim_change(list))
             ft_optim_change_type(&list, &i);
         else
         {
@@ -40,54 +41,54 @@ int ft_optim_2(t_type **head, int i)
 
 void ft_optim_change_type(t_type **list, int *i)
 {
-    if (!ft_strcmp((*list)->s, "SA") || !ft_strcmp((*list)->s, "SB"))
+    if (!ft_strcmp((*list)->s, "sa") || !ft_strcmp((*list)->s, "sb"))
     {
         (*list)->next = (*list)->next->next;
-        (*list)->s = "SS";
+        (*list)->s = "ss";
     }
-    else if (!ft_strcmp((*list)->s, "RA") || !ft_strcmp((*list)->s, "RB"))
+    else if (!ft_strcmp((*list)->s, "ra") || !ft_strcmp((*list)->s, "rb"))
     {
         (*list)->next = (*list)->next->next;
-        (*list)->s = "RR";
+        (*list)->s = "rr";
     }
-    else if (!ft_strcmp((*list)->s, "RRA") || !ft_strcmp((*list)->s, "RRB"))
+    else if (!ft_strcmp((*list)->s, "rra") || !ft_strcmp((*list)->s, "rrb"))
     {
         (*list)->next = (*list)->next->next;
-        (*list)->s = "RRR";
+        (*list)->s = "rrr";
     }
     (*i)++;
 }
 
 int ft_optim_del(t_type *list)
 {
-    if (!ft_strcmp(list->s, "PA") && !ft_strcmp(list->next->s, "PB"))
+    if (!ft_strcmp(list->s, "pa") && !ft_strcmp(list->next->s, "pb"))
         return (1);
-    if (!ft_strcmp(list->s, "PB") && !ft_strcmp(list->next->s, "PA"))
+    if (!ft_strcmp(list->s, "pb") && !ft_strcmp(list->next->s, "pa"))
         return (1);
-    if (!ft_strcmp(list->s, "RA") && !ft_strcmp(list->next->s, "RRA"))
+    if (!ft_strcmp(list->s, "ra") && !ft_strcmp(list->next->s, "rra"))
         return (1);
-    if (!ft_strcmp(list->s, "RRA") && !ft_strcmp(list->next->s, "RA"))
+    if (!ft_strcmp(list->s, "rra") && !ft_strcmp(list->next->s, "ra"))
         return (1);
-    if (!ft_strcmp(list->s, "RB") && !ft_strcmp(list->next->s, "RRB"))
+    if (!ft_strcmp(list->s, "rb") && !ft_strcmp(list->next->s, "rrb"))
         return (1);
-    if (!ft_strcmp(list->s, "RRB") && !ft_strcmp(list->next->s, "RB"))
+    if (!ft_strcmp(list->s, "rrb") && !ft_strcmp(list->next->s, "rb"))
         return (1);
     return (0);
 }
 
 int ft_optim_change(t_type *list)
 {
-    if (!ft_strcmp(list->s, "SA") && !ft_strcmp(list->next->s, "SB"))
+    if (!ft_strcmp(list->s, "sa") && !ft_strcmp(list->next->s, "sb"))
         return (1);
-    if (!ft_strcmp(list->s, "SB") && !ft_strcmp(list->next->s, "SA"))
+    if (!ft_strcmp(list->s, "sb") && !ft_strcmp(list->next->s, "sa"))
         return (1);
-    if (!ft_strcmp(list->s, "RA") && !ft_strcmp(list->next->s, "RB"))
+    if (!ft_strcmp(list->s, "ra") && !ft_strcmp(list->next->s, "rb"))
         return (1);
-    if (!ft_strcmp(list->s, "RB") && !ft_strcmp(list->next->s, "RA"))
+    if (!ft_strcmp(list->s, "rb") && !ft_strcmp(list->next->s, "ra"))
         return (1);
-    if (!ft_strcmp(list->s, "RRA") && !ft_strcmp(list->next->s, "RRB"))
+    if (!ft_strcmp(list->s, "rra") && !ft_strcmp(list->next->s, "rrb"))
         return (1);
-    if (!ft_strcmp(list->s, "RRB") && !ft_strcmp(list->next->s, "RRA"))
+    if (!ft_strcmp(list->s, "rrb") && !ft_strcmp(list->next->s, "rra"))
         return (1);
     return (0);
 }
