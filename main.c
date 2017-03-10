@@ -86,6 +86,7 @@ int main(int ac, char **av)
     ft_optim(&head);
     //ft_printf("%d\n", ft_check_size_2(head));
     ft_print_res(head);
+    //sleep(99999999);
 
 	return 0;
 }
