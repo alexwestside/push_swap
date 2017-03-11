@@ -3,25 +3,23 @@
 
 // ARG="$(~/ClionProjects/ft_random/a.out 1 1000 100)"; ./a.out $ARG | wc -l
 
-void ft_error(void)
+void			ft_error(void)
 {
 	ft_printf("Error\n");
 	exit(EXIT_FAILURE);
 }
 
-void ft_usage(char *av)
+void			ft_usage(char *av)
 {
 	ft_printf("usage: %s\n", av);
-	//ft_putstr(av);
-	//ft_printf("\n");
 	ft_printf("use number >= -2147483648 and <= 2147483647\n");
 	exit(EXIT_FAILURE);
 }
 
-long long int ft_atoi_push_swap(char *s)
+long long int	ft_atoi_push_swap(char *s)
 {
-	long long int res;
-	int sign;
+	long long int	res;
+	int				sign;
 
 	res = 0;
 	sign = 0;
@@ -40,7 +38,7 @@ long long int ft_atoi_push_swap(char *s)
     return (res);
 }
 
-void ft_exit_success(t_stack *a)
+void			ft_exit_success(t_stack *a)
 {
 	if (!a->next)
 	{
@@ -56,10 +54,10 @@ void ft_exit_success(t_stack *a)
 	}
 }
 
-void ft_print_stack(t_stack **a, t_stack **b)
+void			ft_print_stack(t_stack **a, t_stack **b)
 {
-    t_stack *list1;
-    t_stack *list2;
+    t_stack	*list1;
+    t_stack	*list2;
 
     if (!a || !b)
         return;
@@ -92,10 +90,10 @@ void ft_print_stack(t_stack **a, t_stack **b)
 }
 
 
-int ft_if_is_sorted(t_stack *a)
+int				ft_if_is_sorted(t_stack *a)
 {
-	t_stack *list;
-	int val;
+	t_stack	*list;
+	int		val;
 
 	list = a;
 	val = list->val;
@@ -120,14 +118,4 @@ void ft_check_dublicates(int val, t_stack *a)
 			ft_error();
 		list = list->next;
 	}
-}
-
-void ft_end(t_stack **end, t_stack *head)
-{
-    t_stack *list;
-
-    list = head;
-    while(list->next)
-        list = list->next;
-    *end = list;
 }
