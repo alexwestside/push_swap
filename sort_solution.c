@@ -14,7 +14,7 @@ void	ft_qsort_stack(t_stack **a, t_stack **b, int len, t_type **res)
 	if (len <= 3)
 		return (ft_sort(a, len, res, 0));
 
-	pivot = ft_pivot(a, len, -1, -1, 0);
+	pivot = ft_pivot(a, len, -1, 0);
 
 	while ((len - 1) >= 0)
 	{
@@ -54,7 +54,7 @@ void	ft_rev_qsort_stack(t_stack **a, t_stack **b, int len, t_type **res)
 	if (len <= 3)
 		return (ft_sort(b, len, res, 1));
 
-	pivot = ft_pivot(b, len, -1, -1, 0);
+	pivot = ft_pivot(b, len, -1, 0);
 
 	while ((len - 1) >= 0)
 	{

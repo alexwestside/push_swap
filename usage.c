@@ -56,7 +56,6 @@ void			ft_print_stack(t_stack **a, t_stack **b)
 {
 	t_stack *list1;
 	t_stack *list2;
-	char	*s;
 
 	list1 = *a;
 	list2 = *b;

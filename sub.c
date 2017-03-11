@@ -1,10 +1,10 @@
 
 #include "push_swap.h"
 
-int ft_check_size(t_stack *head)
+int		ft_check_size(t_stack *head)
 {
-	t_stack *list;
-	int size;
+	t_stack	*list;
+	int		size;
 
 	list = head;
 	size = 0;
@@ -18,13 +18,15 @@ int ft_check_size(t_stack *head)
 	return (size);
 }
 
-int ft_pivot(t_stack **head, int len, int i, int j, int pivot)
+int		ft_pivot(t_stack **head, int len, int j, int pivot)
 {
-	t_stack *list;
-	t_stack *p;
-	int n1;
-	int n2;
+	t_stack	*list;
+	t_stack	*p;
+	int		n1;
+	int		n2;
+	int		i;
 
+	i = -1;
 	p = *head;
 	while (++i < len)
 	{
@@ -35,14 +37,12 @@ int ft_pivot(t_stack **head, int len, int i, int j, int pivot)
 		pivot = p->val;
 		while (++j < len)
 		{
-			if (pivot < list->val)
-				n1++;
-			else if (pivot > list->val)
-				n2++;
+			pivot < list->val ? n1++ : 0;
+			pivot > list->val ? n2++ : 0;
 			if (n1 > len / 2 || n2 > len / 2)
 			{
 				p = p->next;
-				break;
+				break ;
 			}
 			list = list->next;
 		}
@@ -50,9 +50,9 @@ int ft_pivot(t_stack **head, int len, int i, int j, int pivot)
 	return (pivot);
 }
 
-int ft_check_need(t_stack **a, int pivot, int len)
+int		ft_check_need(t_stack **a, int pivot, int len)
 {
-	t_stack *list;
+	t_stack	*list;
 
 	list = *a;
 	while (len)
@@ -65,9 +65,9 @@ int ft_check_need(t_stack **a, int pivot, int len)
 	return (0);
 }
 
-int ft_rev_check_need(t_stack **a, int pivot, int len)
+int		ft_rev_check_need(t_stack **a, int pivot, int len)
 {
-	t_stack *list;
+	t_stack	*list;
 
 	list = *a;
 	while (len)
@@ -80,9 +80,9 @@ int ft_rev_check_need(t_stack **a, int pivot, int len)
 	return (0);
 }
 
-void ft_print_res(t_type *head)
+void	ft_print_res(t_type *head)
 {
-	t_type *list;
+	t_type	*list;
 
 	list = head;
 	while (list->s)

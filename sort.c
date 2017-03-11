@@ -7,13 +7,13 @@ void	ft_sort(t_stack **head, int len, t_type **res, int id)
 	{
 		if (ft_if_sort(head, len))
 			ft_f_norm_sort(head, len, res, id);
-		return;
+		return ;
 	}
 	else
 	{
 		if (ft_if_rev_sort(head, len))
 			ft_f_rev_sort(head, len, res, id);
-		return;
+		return ;
 	}
 }
 
@@ -52,6 +52,7 @@ int		ft_if_rev_sort(t_stack **head, int len)
 	}
 	return (0);
 }
+
 int		ft_if_is_sorted(t_stack *a)
 {
 	t_stack	*list;
@@ -81,4 +82,3 @@ void	ft_check_dublicates(int val, t_stack *a)
 		list = list->next;
 	}
 }
-

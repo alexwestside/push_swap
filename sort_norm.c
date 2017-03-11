@@ -27,7 +27,7 @@ void	ft_s_norm_sort(t_stack **head, int len, t_type **res, int id)
 	list = *head;
 	tail = list->next;
 	if (len == 1)
-		return;
+		return ;
 	else if (len == 2)
 	{
 		if (list->val > tail->val)
@@ -57,4 +57,3 @@ int		ft_check_n_sort_type(t_stack **head)
 	else
 		return (-1);
 }
-

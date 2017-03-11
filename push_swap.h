@@ -38,7 +38,7 @@ void				ft_rrev_rotate(t_stack **a, t_stack **b, t_type **res, int id);
 int					ft_check_size(t_stack *a);
 void				ft_sort_sotution(t_stack *a, t_stack *b, t_type *res);
 void				ft_qsort_stack(t_stack **a, t_stack **b, int len, t_type **res);
-int					ft_pivot(t_stack **head, int len, int i, int j, int pivot);
+int					ft_pivot(t_stack **head, int len/*, int i*/, int j, int pivot);
 int					ft_check_need(t_stack **a, int pivot, int len);
 void				ft_rev_qsort_stack(t_stack **a, t_stack **b, int len, t_type **res);
 int					ft_rev_check_need(t_stack **a, int pivot, int len);
