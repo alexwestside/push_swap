@@ -40,14 +40,14 @@ void			ft_exit_success(t_stack *a)
 {
 	if (!a->next)
 	{
-		ft_printf("Stack with ONE elemend is alredy ordered!!!\n");
-		ft_print_stack(&a, NULL);
+		//ft_printf("Stack with ONE elemend is alredy ordered!!!\n");
+		//ft_print_stack(&a, NULL);
 		exit(EXIT_SUCCESS);
 	}
 	if (!ft_if_is_sorted(a))
 	{
-		ft_printf("Stack is alredy ordered!!!\n");
-		ft_print_stack(&a, NULL);
+		//ft_printf("Stack is alredy ordered!!!\n");
+		//ft_print_stack(&a, NULL);
 		exit(EXIT_SUCCESS);
 	}
 }
@@ -57,8 +57,8 @@ void			ft_print_stack(t_stack **a, t_stack **b)
 	t_stack *list1;
 	t_stack *list2;
 
-	list1 = *a;
-	list2 = *b;
+	list1 = a ? *a : NULL;
+	list2 = b ? *b : NULL;
 	ft_printf("----------------   ----------------\n");
 	ft_printf("| STACK: [ A ] |   | STACK: [ B ] |\n");
 	ft_printf("----------------   ----------------\n");
