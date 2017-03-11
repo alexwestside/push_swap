@@ -16,8 +16,8 @@ void			ft_usage(char *av)
 
 long long int	ft_atoi_push_swap(char *s)
 {
-	long long int res;
-	int sign;
+	long long int	res;
+	int				sign;
 
 	res = 0;
 	sign = 0;
@@ -36,7 +36,7 @@ long long int	ft_atoi_push_swap(char *s)
 	return (res);
 }
 
-void ft_exit_success(t_stack *a)
+void			ft_exit_success(t_stack *a)
 {
 	if (!a->next)
 	{
@@ -52,13 +52,12 @@ void ft_exit_success(t_stack *a)
 	}
 }
 
-void ft_print_stack(t_stack **a, t_stack **b)
+void			ft_print_stack(t_stack **a, t_stack **b)
 {
 	t_stack *list1;
 	t_stack *list2;
+	char	*s;
 
-	if (!a || !b)
-		return;
 	list1 = *a;
 	list2 = *b;
 	ft_printf("----------------   ----------------\n");
@@ -66,54 +65,16 @@ void ft_print_stack(t_stack **a, t_stack **b)
 	ft_printf("----------------   ----------------\n");
 	while (list1 || list2)
 	{
+		list1 ? ft_printf("|%8d%7|   ", list1->val) : 0;
 		if (list1)
-		{
-			ft_printf("|%8d%7|", list1->val);
 			list1 = list1->next;
-		}
 		else
-			ft_printf("|%15|");
-		ft_printf("   ");
+			ft_printf("|%15|   ");
+		list2 ? ft_printf("|%8d%7|\n", list2->val) : 0;
 		if (list2)
-		{
-			ft_printf("|%8d%7|", list2->val);
 			list2 = list2->next;
-		}
 		else
-			ft_printf("|%15|");
-		ft_printf("\n");
+			ft_printf("|%15|\n");
 	}
-	ft_printf("----------------   ----------------");
-	ft_printf("\n");
-}
-
-
-int ft_if_is_sorted(t_stack *a)
-{
-	t_stack *list;
-	int val;
-
-	list = a;
-	val = list->val;
-	while (list)
-	{
-		if (val > list->val)
-			return (1);
-		val = list->val;
-		list = list->next;
-	}
-	return (0);
-}
-
-void ft_check_dublicates(int val, t_stack *a)
-{
-	t_stack *list;
-
-	list = a;
-	while (list)
-	{
-		if (val == list->val)
-			ft_error();
-		list = list->next;
-	}
+	ft_printf("----------------   ----------------\n");
 }

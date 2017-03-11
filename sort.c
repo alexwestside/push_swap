@@ -52,3 +52,33 @@ int		ft_if_rev_sort(t_stack **head, int len)
 	}
 	return (0);
 }
+int		ft_if_is_sorted(t_stack *a)
+{
+	t_stack	*list;
+	int		val;
+
+	list = a;
+	val = list->val;
+	while (list)
+	{
+		if (val > list->val)
+			return (1);
+		val = list->val;
+		list = list->next;
+	}
+	return (0);
+}
+
+void	ft_check_dublicates(int val, t_stack *a)
+{
+	t_stack		*list;
+
+	list = a;
+	while (list)
+	{
+		if (val == list->val)
+			ft_error();
+		list = list->next;
+	}
+}
+
