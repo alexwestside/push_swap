@@ -6,7 +6,7 @@ void	ft_rotate(t_stack **head, t_type **res, int id)
 	t_stack	*list;
 	t_stack	*tail;
 
-	if (*head)
+	if (*head && (*head)->next)
 	{
 		list = *head;
 		while (list->next)

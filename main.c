@@ -16,12 +16,20 @@ t_stack	*ft_fill_stack(int val, t_stack *a)
 	}
 	else
 	{
+		/*
 		tail = (t_stack *)malloc(sizeof(t_stack));
 		tail->next = list;
 		list->prev = tail;
 		tail->prev = NULL;
 		tail->val = val;
 		a = tail;
+*/
+		tail = ft_end(a);
+		list = (t_stack *)malloc(sizeof(t_stack));
+		tail->next = list;
+		list->prev = tail;
+		list->next = NULL;
+		list->val = val;
 	}
 	return (a);
 }
@@ -83,6 +91,5 @@ int		main(int ac, char **av)
 	ft_sort_sotution(a, b, res);
 	ft_optim(&head);
 	ft_print_res(head);
-	sleep(9999);
 	return (0);
 }
