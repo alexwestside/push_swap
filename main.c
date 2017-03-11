@@ -16,7 +16,7 @@ t_stack	*ft_fill_stack(int val, t_stack *a)
 	}
 	else
 	{
-		tail = (t_stack *) malloc(sizeof(t_stack));
+		tail = (t_stack *)malloc(sizeof(t_stack));
 		tail->next = list;
 		list->prev = tail;
 		tail->prev = NULL;
@@ -68,20 +68,20 @@ int		main(int ac, char **av)
 {
 	t_stack			*a;
 	t_stack			*b;
-    static t_type	*res;
-    t_type			*head;
+	static t_type	*res;
+	t_type			*head;
 
 	a = NULL;
 	b = NULL;
-    res = (t_type *)malloc(sizeof(t_type));
-    res->next = NULL;
-    res->s = NULL;
-    head = res;
+	res = (t_type *)malloc(sizeof(t_type));
+	res->next = NULL;
+	res->s = NULL;
+	head = res;
 	ac < 2 ? ft_usage(*av) : av++;
 	a = ft_check_and_fill(av, a);
 	ft_exit_success(a);
 	ft_sort_sotution(a, b, res);
-    ft_optim(&head);
-    ft_print_res(head);
-	return 0;
+	ft_optim(&head);
+	ft_print_res(head);
+	return (0);
 }

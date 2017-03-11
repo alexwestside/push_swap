@@ -57,3 +57,8 @@ int		ft_check_n_sort_type(t_stack **head)
 	else
 		return (-1);
 }
+
+void	ft_sort_in_type_0(void)
+{
+	return ;
+}

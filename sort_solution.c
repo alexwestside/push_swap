@@ -13,24 +13,19 @@ void	ft_qsort_stack(t_stack **a, t_stack **b, int len, t_type **res)
 	slen = len;
 	if (len <= 3)
 		return (ft_sort(a, len, res, 0));
-
 	pivot = ft_pivot(a, len, -1, 0);
-
 	while ((len - 1) >= 0)
 	{
 		if (ft_check_need(a, pivot, len))
-			if ((*a)->val <= pivot)
-			{
+			if ((*a)->val <= pivot && ++push)
 				ft_push(a, b, res, 1);
-				push++;
-			}
 			else
 			{
 				ft_rotate(a, res, 0);
 				rot++;
 			}
 		else
-			break;
+			break ;
 		len--;
 	}
 	while (rot-- && ft_check_size(*a) + push != slen)
@@ -53,24 +48,19 @@ void	ft_rev_qsort_stack(t_stack **a, t_stack **b, int len, t_type **res)
 	slen = len;
 	if (len <= 3)
 		return (ft_sort(b, len, res, 1));
-
 	pivot = ft_pivot(b, len, -1, 0);
-
 	while ((len - 1) >= 0)
 	{
 		if (ft_rev_check_need(b, pivot, len))
-			if ((*b)->val > pivot)
-			{
+			if ((*b)->val > pivot && ++push)
 				ft_push(b, a, res, 0);
-				push++;
-			}
 			else
 			{
 				ft_rotate(b, res, 1);
 				rot++;
 			}
 		else
-			break;
+			break ;
 		len--;
 	}
 	ft_qsort_stack(a, b, push, res);

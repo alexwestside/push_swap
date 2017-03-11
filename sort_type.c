@@ -1,11 +1,6 @@
 
 #include "push_swap.h"
 
-void	ft_sort_in_type_0(void)
-{
-	return;
-}
-
 void	ft_sort_in_type_1(t_stack **head, t_type **res, int id)
 {
 	t_stack	*list;
