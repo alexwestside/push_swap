@@ -19,17 +19,7 @@ void	ft_rev_rotate(t_stack **head, t_type **res, int id)
 		(*head) = list;
 	}
 	if ((*head)->next)
-	{
 		ft_fill_res(res, id, "rra", "rrb");
-/*
-		(*res)->s = !id ? "rra" : "rrb";
-		(*res)->next = (t_type *)malloc(sizeof(t_type));
-		*res = (*res)->next;
-		(*res)->s = NULL;
-		(*res)->next = NULL;
-		*/
-
-	}
 }
 
 void	ft_rrev_rotate(t_stack **a, t_stack **b, t_type **res, int id)

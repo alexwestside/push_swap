@@ -1,8 +1,6 @@
 
 #include "push_swap.h"
 
-void ft_f(t_type **res, int id, char *s1, char *s2);
-
 void	ft_swap(t_stack **head, t_type **res, int id)
 {
 	t_stack	*list;
@@ -25,21 +23,7 @@ void	ft_swap(t_stack **head, t_type **res, int id)
 		}
 	}
 	ft_fill_res(res, id, "sa", "sb");
-
-	//ft_f(res, id, "sa", "sb");
-
 }
-
-/*
-void ft_f(t_type **res, int id, char *s1, char *s2)
-{
-	(*res)->s = !id ? s1 : s2;
-	(*res)->next = (t_type *)malloc(sizeof(t_type));
-	*res = (*res)->next;
-	(*res)->s = NULL;
-	(*res)->next = NULL;
-}
- */
 
 void	ft_sswap(t_stack **a, t_stack **b, t_type **res, int id)
 {
@@ -47,7 +31,7 @@ void	ft_sswap(t_stack **a, t_stack **b, t_type **res, int id)
 	ft_swap(b, res, id);
 }
 
-void ft_fill_res(t_type **res, int id, char *s1, char *s2)
+void	ft_fill_res(t_type **res, int id, char *s1, char *s2)
 {
 	(*res)->s = !id ? s1 : s2;
 	(*res)->next = (t_type *)malloc(sizeof(t_type));

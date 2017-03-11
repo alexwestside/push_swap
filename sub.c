@@ -28,22 +28,19 @@ int		ft_pivot(t_stack **head, int len, int j, int pivot)
 
 	i = -1;
 	p = *head;
-	while (++i < len)
+	while (++i < len && ((n1 = 0) || 1))
 	{
 		list = *head;
 		j = -1;
-		n1 = 0;
 		n2 = 0;
 		pivot = p->val;
 		while (++j < len)
 		{
 			pivot < list->val ? n1++ : 0;
 			pivot > list->val ? n2++ : 0;
+			(n1 > len / 2 || n2 > len / 2) ? p = p->next : 0;
 			if (n1 > len / 2 || n2 > len / 2)
-			{
-				p = p->next;
 				break ;
-			}
 			list = list->next;
 		}
 	}

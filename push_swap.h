@@ -64,5 +64,7 @@ int					ft_optim_change(t_type *list);
 void				ft_optim_change_type(t_type **list, int *i);
 int					ft_optim_2(t_type **head, int i);
 void 				ft_fill_res(t_type **res, int id, char *s1, char *s2);
+void				ft_rot(t_stack **b, t_type **res, int *rot);
+void				ft_rot2(t_stack **b, t_type **res, int *rot);
 
 #endif

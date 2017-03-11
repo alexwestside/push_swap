@@ -26,15 +26,6 @@ void	ft_push(t_stack **a, t_stack **b, t_type **res, int id)
 		tail->next = *b;
 		*b = tail;
 		list ? list->prev = NULL : 0;
-		tail->prev = NULL;
 	}
 	ft_fill_res(res, id, "pa", "pb");
-/*
-	(*res)->s = !id ? "pa" : "pb";
-	(*res)->next = (t_type *)malloc(sizeof(t_type));
-	*res = (*res)->next;
-	(*res)->s = NULL;
-	(*res)->next = NULL;
- */
-
 }
