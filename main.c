@@ -1,10 +1,10 @@
 
 #include "push_swap.h"
 
-t_stack *ft_fill_stack(int val, t_stack *a)
+t_stack	*ft_fill_stack(int val, t_stack *a)
 {
-	t_stack *list;
-	t_stack *tail;
+	t_stack	*list;
+	t_stack	*tail;
 
 	list = a;
 	if (!a)
@@ -26,10 +26,10 @@ t_stack *ft_fill_stack(int val, t_stack *a)
 	return (a);
 }
 
-void  ft_val_check(char **av)
+void	ft_val_check(char **av)
 {
-	char **s;
-	char *p;
+	char	**s;
+	char	*p;
 
 	s = av;
 	while (*s)
@@ -49,9 +49,9 @@ void  ft_val_check(char **av)
 	}
 }
 
-t_stack *ft_check_and_fill(char **av, t_stack *a)
+t_stack	*ft_check_and_fill(char **av, t_stack *a)
 {
-	int val;
+	int	val;
 
 	ft_val_check(av);
 	while (*av)
@@ -64,18 +64,17 @@ t_stack *ft_check_and_fill(char **av, t_stack *a)
 	return (a);
 }
 
-int main(int ac, char **av)
+int		main(int ac, char **av)
 {
-	t_stack *a;
-	t_stack *b;
-    static t_type *res;
-    t_type *head;
+	t_stack			*a;
+	t_stack			*b;
+    static t_type	*res;
+    t_type			*head;
 
 	a = NULL;
 	b = NULL;
     res = (t_type *)malloc(sizeof(t_type));
     res->next = NULL;
-    //res->prev = NULL;
     res->s = NULL;
     head = res;
 	ac < 2 ? ft_usage(*av) : av++;

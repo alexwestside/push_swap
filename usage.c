@@ -1,8 +1,6 @@
 
 #include "push_swap.h"
 
-// ARG="$(~/ClionProjects/ft_random/a.out 1 1000 100)"; ./a.out $ARG | wc -l
-
 void			ft_error(void)
 {
 	ft_printf("Error\n");
@@ -18,8 +16,8 @@ void			ft_usage(char *av)
 
 long long int	ft_atoi_push_swap(char *s)
 {
-	long long int	res;
-	int				sign;
+	long long int res;
+	int sign;
 
 	res = 0;
 	sign = 0;
@@ -27,18 +25,18 @@ long long int	ft_atoi_push_swap(char *s)
 		ft_error();
 	if (*s == '-' || *s == '+')
 	{
-		sign = *s =='-' ? -1 : 1;
+		sign = *s == '-' ? -1 : 1;
 		s++;
 	}
 	while (*s)
 		res = res * 10 + *(s++) - 48;
 	res = sign < 0 ? res * sign : res;
-    if (res > MAX_INT || res < MIN_INT)
+	if (res > MAX_INT || res < MIN_INT)
 		ft_error();
-    return (res);
+	return (res);
 }
 
-void			ft_exit_success(t_stack *a)
+void ft_exit_success(t_stack *a)
 {
 	if (!a->next)
 	{
@@ -54,46 +52,46 @@ void			ft_exit_success(t_stack *a)
 	}
 }
 
-void			ft_print_stack(t_stack **a, t_stack **b)
+void ft_print_stack(t_stack **a, t_stack **b)
 {
-    t_stack	*list1;
-    t_stack	*list2;
+	t_stack *list1;
+	t_stack *list2;
 
-    if (!a || !b)
-        return;
-    list1 = *a;
-    list2 = *b;
-    ft_printf("----------------   ----------------\n");
-    ft_printf("| STACK: [ A ] |   | STACK: [ B ] |\n");
-    ft_printf("----------------   ----------------\n");
-    while (list1 || list2)
-    {
-        if (list1)
-        {
-            ft_printf("|%8d%7|", list1->val);
-            list1 = list1->next;
-        }
-        else
-            ft_printf("|%15|");
-        ft_printf("   ");
-        if (list2)
-        {
-            ft_printf("|%8d%7|", list2->val);
-            list2 = list2->next;
-        }
-        else
-            ft_printf("|%15|");
-        ft_printf("\n");
-    }
-    ft_printf("----------------   ----------------");
-    ft_printf("\n");
+	if (!a || !b)
+		return;
+	list1 = *a;
+	list2 = *b;
+	ft_printf("----------------   ----------------\n");
+	ft_printf("| STACK: [ A ] |   | STACK: [ B ] |\n");
+	ft_printf("----------------   ----------------\n");
+	while (list1 || list2)
+	{
+		if (list1)
+		{
+			ft_printf("|%8d%7|", list1->val);
+			list1 = list1->next;
+		}
+		else
+			ft_printf("|%15|");
+		ft_printf("   ");
+		if (list2)
+		{
+			ft_printf("|%8d%7|", list2->val);
+			list2 = list2->next;
+		}
+		else
+			ft_printf("|%15|");
+		ft_printf("\n");
+	}
+	ft_printf("----------------   ----------------");
+	ft_printf("\n");
 }
 
 
-int				ft_if_is_sorted(t_stack *a)
+int ft_if_is_sorted(t_stack *a)
 {
-	t_stack	*list;
-	int		val;
+	t_stack *list;
+	int val;
 
 	list = a;
 	val = list->val;

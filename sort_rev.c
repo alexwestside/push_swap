@@ -1,11 +1,10 @@
 
 #include "push_swap.h"
 
-void ft_f_rev_sort(t_stack **head, int len, t_type **res, int id)
+void	ft_f_rev_sort(t_stack **head, int len, t_type **res, int id)
 {
-    int i;
+    int	i;
 
-    i = 0;
     if (len == 1 || len == 2)
         ft_s_rev_sort(head, len, res, id);
     else
@@ -20,10 +19,10 @@ void ft_f_rev_sort(t_stack **head, int len, t_type **res, int id)
     }
 }
 
-void ft_s_rev_sort(t_stack **head, int len, t_type **res, int id)
+void	ft_s_rev_sort(t_stack **head, int len, t_type **res, int id)
 {
-    t_stack *list;
-    t_stack *tail;
+    t_stack	*list;
+    t_stack	*tail;
 
     list = *head;
     tail = list->next;
@@ -36,10 +35,10 @@ void ft_s_rev_sort(t_stack **head, int len, t_type **res, int id)
     }
 }
 
-int ft_check_r_sort_type(t_stack **head)
+int		ft_check_r_sort_type(t_stack **head)
 {
-    t_stack *list;
-    t_stack *tail;
+    t_stack	*list;
+    t_stack	*tail;
 
     list = (*head)->next;
     tail = list->next;

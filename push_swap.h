@@ -63,6 +63,5 @@ int					ft_optim_del(t_type *list);
 int					ft_optim_change(t_type *list);
 void				ft_optim_change_type(t_type **list, int *i);
 int					ft_optim_2(t_type **head, int i);
-int					ft_check_size_2(t_type *head);
 
 #endif

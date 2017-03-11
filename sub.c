@@ -1,23 +1,6 @@
 
 #include "push_swap.h"
 
-int ft_check_size_2(t_type *head)
-{
-    t_type *list;
-    int size;
-
-    list = head;
-    size = 0;
-    if (!list->next)
-        return (1);
-    while (list)
-    {
-        list = list->next;
-        size++;
-    }
-    return (size);
-}
-
 int ft_check_size(t_stack *head)
 {
     t_stack *list;

@@ -1,11 +1,10 @@
 
 #include "push_swap.h"
 
-void ft_swap(t_stack **head, t_type **res, int id)
+void	ft_swap(t_stack **head, t_type **res, int id)
 {
-	t_stack *list;
-	t_stack *tail;
-    //t_type *lst;
+	t_stack	*list;
+	t_stack	*tail;
 
 	if (*head)
 	{
@@ -23,14 +22,14 @@ void ft_swap(t_stack **head, t_type **res, int id)
 			*head = tail;
 		}
 	}
-    (*res)->s = !id ? "sa" : "sb";
-    (*res)->next = (t_type *)malloc(sizeof(t_type));
-    *res = (*res)->next;
-    (*res)->s = NULL;
-    (*res)->next = NULL;
+	(*res)->s = !id ? "sa" : "sb";
+	(*res)->next = (t_type *) malloc(sizeof(t_type));
+	*res = (*res)->next;
+	(*res)->s = NULL;
+	(*res)->next = NULL;
 }
 
-void ft_sswap(t_stack **a, t_stack **b, t_type **res, int id)
+void	ft_sswap(t_stack **a, t_stack **b, t_type **res, int id)
 {
 	ft_swap(a, res, id);
 	ft_swap(b, res, id);
