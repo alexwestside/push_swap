@@ -21,7 +21,7 @@ void	ft_rev_rotate(t_stack **head, t_type **res, int id)
 	if ((*head)->next)
 	{
 		(*res)->s = !id ? "rra" : "rrb";
-		(*res)->next = (t_type *) malloc(sizeof(t_type));
+		(*res)->next = (t_type *)malloc(sizeof(t_type));
 		*res = (*res)->next;
 		(*res)->next = NULL;
 	}
@@ -32,7 +32,7 @@ void	ft_rrev_rotate(t_stack **a, t_stack **b, t_type **res, int id)
 	ft_rev_rotate(a, res, id);
 	ft_rev_rotate(b, res, id);
 	(*res)->s = "rrr";
-	(*res)->next = (t_type *) malloc(sizeof(t_type));
+	(*res)->next = (t_type *)malloc(sizeof(t_type));
 	*res = (*res)->next;
 	(*res)->s = NULL;
 	(*res)->next = NULL;

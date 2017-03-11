@@ -285,33 +285,6 @@ sort.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort.c.s
 .PHONY : sort.c.s
 
-sort_four.o: sort_four.c.o
-
-.PHONY : sort_four.o
-
-# target to build an object file
-sort_four.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort_four.c.o
-.PHONY : sort_four.c.o
-
-sort_four.i: sort_four.c.i
-
-.PHONY : sort_four.i
-
-# target to preprocess a source file
-sort_four.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort_four.c.i
-.PHONY : sort_four.c.i
-
-sort_four.s: sort_four.c.s
-
-.PHONY : sort_four.s
-
-# target to generate assembly for a file
-sort_four.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort_four.c.s
-.PHONY : sort_four.c.s
-
 sort_norm.o: sort_norm.c.o
 
 .PHONY : sort_norm.o
@@ -528,9 +501,6 @@ help:
 	@echo "... sort.o"
 	@echo "... sort.i"
 	@echo "... sort.s"
-	@echo "... sort_four.o"
-	@echo "... sort_four.i"
-	@echo "... sort_four.s"
 	@echo "... sort_norm.o"
 	@echo "... sort_norm.i"
 	@echo "... sort_norm.s"

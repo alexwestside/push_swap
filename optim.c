@@ -6,7 +6,7 @@ void	ft_optim(t_type **head)
 	while (1)
 	{
 		if (!ft_optim_2(head, 0))
-			break;
+			break ;
 	}
 }
 
