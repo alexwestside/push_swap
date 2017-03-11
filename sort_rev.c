@@ -11,7 +11,7 @@ void ft_f_rev_sort(t_stack **head, int len, t_type **res, int id)
     else
     {
         i = ft_check_r_sort_type(head);
-        i == 0 ? ft_sort_in_type_0(head, res, id) : 0;
+        i == 0 ? ft_sort_in_type_0() : 0;
         i == 1 ? ft_sort_in_type_1(head, res, id) : 0;
         i == 2 ? ft_sort_in_type_2(head, res, id) : 0;
         i == 3 ? ft_sort_in_type_3(head, res, id) : 0;

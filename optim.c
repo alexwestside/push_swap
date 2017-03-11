@@ -3,13 +3,10 @@
 
 void    ft_optim(t_type **head)
 {
-    int i;
-
     while (1)
     {
         if (!ft_optim_2(head, 0))
             break;
-        //write(1, "OK\n", 3);
     }
 }
 
