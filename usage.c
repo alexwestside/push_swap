@@ -40,14 +40,14 @@ void			ft_exit_success(t_stack *a)
 {
 	if (!a->next)
 	{
-		//ft_printf("Stack with ONE elemend is alredy ordered!!!\n");
-		//ft_print_stack(&a, NULL);
+		ft_printf("Stack with ONE elemend is alredy ordered!!!\n");
+		ft_print_stack(&a, NULL);
 		exit(EXIT_SUCCESS);
 	}
 	if (!ft_if_is_sorted(a))
 	{
-		//ft_printf("Stack is alredy ordered!!!\n");
-		//ft_print_stack(&a, NULL);
+		ft_printf("Stack is alredy ordered!!!\n");
+		ft_print_stack(&a, NULL);
 		exit(EXIT_SUCCESS);
 	}
 }

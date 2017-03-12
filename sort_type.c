@@ -83,13 +83,3 @@ void	ft_sort_in_type_5(t_stack **head, t_type **res, int id)
 		ft_rev_rotate(head, res, id);
 	}
 }
-
-t_stack *ft_end(t_stack *a)
-{
-	t_stack *list;
-
-	list = a;
-	while (list->next)
-		list = list->next;
-	return (list);
-}

@@ -57,3 +57,14 @@ int		ft_check_r_sort_type(t_stack **head)
 	else
 		return (-1);
 }
+
+
+t_stack *ft_end(t_stack *a)
+{
+	t_stack *list;
+
+	list = a;
+	while (list->next)
+		list = list->next;
+	return (list);
+}
