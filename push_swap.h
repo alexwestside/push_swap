@@ -67,5 +67,6 @@ void 				ft_fill_res(t_type **res, int id, char *s1, char *s2);
 void				ft_rot(t_stack **b, t_type **res, int *rot);
 void				ft_rot2(t_stack **b, t_type **res, int *rot);
 t_stack				*ft_end(t_stack *a);
+void				ft_leaks(t_type **list);
 
 #endif
