@@ -82,7 +82,7 @@ int		main(int ac, char **av)
 	ft_exit_success(a);
 	ft_sort_sotution(a, b, res);
 	ft_optim(&head);
-	sleep(999);
+	//sleep(999);
 	ft_print_res(head);
 	return (0);
 }
