@@ -22,6 +22,7 @@ void	ft_qsort_stack(t_stack **a, t_stack **b, int len, t_type **res)
 	}
 	while (rot-- && ft_check_size(*a) + push != slen)
 		ft_rev_rotate(a, res, 0);
+	ft_qsort_stack(a, b, slen - push, res);
 	ft_rev_qsort_stack(a, b, push, res);
 	while (push--)
 		ft_push(b, a, res, 0);
